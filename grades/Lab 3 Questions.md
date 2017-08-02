@@ -1,4 +1,4 @@
-# Lab 2 
+# Lab 3
 
 ### Question 1 MPG
 
@@ -23,8 +23,8 @@
  marathon distance.
 
  So in the first week of training, they will run 1 mile;  
-   second week 1.1 miles,  
-   third week 1.21 miles...  
+ in the second week 1.1 miles,  
+ int the third week 1.21 miles...  
 
  You would like to write a program to print out their training schedule.
 
