@@ -161,38 +161,29 @@ Start with the `Question_4_Reduce_Repetition.java` program.
 
  As an example, for the number `4123456789012349`
  
- 
- | ---| --- |
- | d | r |
- | 5 | 334234 |
- 
-
- Credit card digits in the top row, processed digits in following rows
-
-| Digits| Double even position digits | Add digits if doubles values is > 10 |  
-|---| --- | ---| 
-| 4 |  4x2 = 8	 |   8 |
-| 1	|  1 | 1 | 1 |
-| 2	|  2x2 = 4  | 4|
-| 3	|  3  | 3|
-| 4	|  4x2 = 8 |  8|
-| 5	| 5  |  5|
-| 6	|  6x2 = 12 | 1+2 = 3|
-| 7	|  7  | 7|
-| 8	|  8x2 = 16 | 1+6 = 7 |
-| 9	| 9 | 9|
-| 0 |  0x2 = 0 | 0|
-| 1 | 1  | 1|
-| 2	|  2x2 = 4 |  4|
-| 3 |	 3  | 3|
-| 4	| 4x2=8	 | 8|
-| 9 | 9 |  9|
-
+| Digits| Double value of even positions | Add digits if doubled values is > 10 |  
+|-------|------------------------------- | -------------------------------------| 
+| 4 |  4x2 = 8	 | 8        |
+| 1	|  1        | 1        |
+| 2	|  2x2 = 4  | 4        |
+| 3	|  3        | 3        |
+| 4	|  4x2 = 8  | 8        |
+| 5	|  5        | 5        |
+| 6	|  6x2 = 12 | 1+2 = 3  |
+| 7	|  7        | 7        |
+| 8	|  8x2 = 16 | 1+6 = 7  |
+| 9	|  9        | 9        |
+| 0 |  0x2 = 0  | 0        |
+| 1 |  1        | 1        |
+| 2	|  2x2 = 4  | 4        |
+| 3 |	 3        | 3        |
+| 4	|  4x2=8	   | 8        |
+| 9 |  9        | 9        |
 
  So the sum is 8 + 1 + 4 + 3 + 8 + 5 + 3 + 7 + +7 + 9 + 0 + 1 + 4 + 3 + 8 + 9 = 80.  
  80 divided by 10 has no remainder, so the card number 4123456789012349 is valid.
 
- Test your program with some “valid” numbers, and also try changing one digit, like change a 3 to a 4,
+ Test your program with some "valid" numbers, and also try changing one digit, like change a 3 to a 4,
  and verify that the number is now invalid.
 
  Also remember to check that the String is the right length, starts with 4, and contains only numbers.
