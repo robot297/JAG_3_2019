@@ -30,7 +30,7 @@
 
  But, what if your friend thinks this schedule is too slow? Or too fast?
  Your friend can get to the marathon distance sooner by increasing their distance
- by 15% every week?  Or, they may want to be more leisurely and increase bt 3% every week.
+ by 15% every week?  Or, they may want to be more leisurely and increase by 3% every week.
  How does that affect the number of weeks needed?
 
  Then, you think, what if your friend decides they want to train for a
@@ -82,7 +82,7 @@
 
 ### Question 4 Reduce Repetition
 
-Start with this program.
+Start with the `Question_4_Reduce_Repetition.java` program.
  
   Notice there are several drinks, and the code to get the total sales for each is very similar. Can you create and use another method (or methods) that will be called from the coffeeShop method, to make this program less repetitive?
 
@@ -153,19 +153,21 @@ Start with this program.
  For testing, here’s some example valid CC numbers, (unlikely to be actual numbers) which are valid credit
  card numbers according to the rules in the link above:
 
-``` 4123123412341236
- 4000111122223339
- 4123456789012349
+``` 
+4123123412341236
+4000111122223339
+4123456789012349
  ```
 
- As an example, for the number 4123456789012349
+ As an example, for the number `4123456789012349`
 
  Credit card digits in the top row, processed digits in following rows
 
+```
  Digits:                        4	    1	    2	    3	    4	    5	    6	    7	    8	    9	    0	    1	    2	    3	    4	    9
  Double even position digits:   4x2=8	1	    2x2=4	3	    4x2=8	5	    6x2=12  7	    8x2=16  9       0x2=0	1	    2x2=4	3	    4x2=8	9
  Add digits for 10+:            8       1       4       3       8       5       1+3=3   7       1+6=7   9       0       1       4       3       8       9
-
+```
 
  So the sum is 8 + 1 + 4 + 3 + 8 + 5 + 3 + 7 + +7 + 9 + 0 + 1 + 4 + 3 + 8 + 9 = 80.
  80 divided by 10 has no remainder, so the card number 4123456789012349 is valid.

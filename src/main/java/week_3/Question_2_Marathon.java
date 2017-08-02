@@ -22,7 +22,7 @@ import static input.InputUtils.doubleInput;
 
  But, what if your friend thinks this schedule is too slow? Or too fast?
  Your friend can get to the marathon distance sooner by increasing their distance
- by 15% every week?  Or, they may want to be more leisurely and increase bt 3% every week.
+ by 15% every week?  Or, they may want to be more leisurely and increase by 3% every week.
  How does that affect the number of weeks needed?
 
  Then, you think, what if your friend decides they want to train for a
