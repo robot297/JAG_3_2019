@@ -10,7 +10,7 @@ package week_3;
 
  Your program should ask the user:
 
- •	How many programmers will be on the team   [ More that ~30 programmers -> Waterfall ]
+ •	How many programmers will be on the team   [ More than 30 programmers -> Waterfall ]
  •	If there needs to be firm deadlines and a fixed schedule  [ Yes - > Waterfall ]
  •	If the programmers have experience in requirements, analysis and testing as well as coding [ Yes - > Agile ]
  •	If there are stringent quality control requirements   [ Yes -> Waterfall ]
