@@ -11,11 +11,12 @@ import static input.InputUtils.*;
  * the coffeeShop method, to make this program less repetitive?
  *
  * Hint: would an array of drink names help?
- *
+ * Hint: create a method that takes the name of a drink as an argument. This method can calculate sales for that drink.
  */
 public class Question_4_Reduce_Repetition {
 
 
+    // You don't need to modify this line
     public static void main(String[] args) {
         new Question_4_Reduce_Repetition().coffeeShop();
     }
@@ -51,13 +52,10 @@ public class Question_4_Reduce_Repetition {
         double mochaPrice = doubleInput("What does a cup of mocha cost?");
         double mochaDrinkSales = mochaCups * mochaPrice;
         totalSales = totalSales + mochaDrinkSales;
-
-
+        
         System.out.println("Total sales for the day are $"  + totalSales);
 
     }
-
-
-
+    
 }
 
