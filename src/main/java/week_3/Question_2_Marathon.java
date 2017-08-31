@@ -3,8 +3,6 @@ package week_3;
 import static input.InputUtils.doubleInput;
 
 /**
- *
- *
 
  Marathon
 
@@ -42,9 +40,9 @@ import static input.InputUtils.doubleInput;
  Use string formatting to display the weekly distances to 2 decimal places.
 
  The method should return the number of weeks it will take, as an integer.
-
-
  */
+
+
 public class Question_2_Marathon {
 
     public static void main(String[] args) {
@@ -55,7 +53,7 @@ public class Question_2_Marathon {
 
         double currentDistance = doubleInput("How far can you run right now, in miles? ");
         double targetDistance = doubleInput("What is the target distance, in miles? ");
-        double weeklyPercentIncrease = doubleInput("What percent further do you want to run every week? Enter 5 for 5% ");
+        double weeklyPercentIncrease = doubleInput("What percent further do you want to run every week? Example: enter 5 for 5% or 10 for 10% ");
 
         // TODO Call your trainingSchedule method.
         // The method will print a table of weeks and distances; and return total number of weeks
@@ -66,11 +64,29 @@ public class Question_2_Marathon {
 
 
     // TODO write a method called trainingSchedule
-    // It will take 3 arguments: currentDistance, targetDistance, and percentIncrease
-    // The method will print a table of weeks and distances;
-    //    the table columns should be in that order (weeks then distance)
+    // It will take 3 double arguments: currentDistance, targetDistance, and percentIncrease
+    // The method will print a table of weeks and distances.
+    // The final row should have a distance greater or equal to the target distance.
+    // the table columns should be in that order (weeks then distance)
+    //
+    //    Example table for start 1 miles, target 20, increase 10%
+    //
+    //     Week      Distance
+    //      1     distance 1.00
+    //      2     distance 1.10
+    //      3     distance 1.21
+    //      4     distance 1.33
+    //
+    //      ..... more rows here .....
+    //
+    //      31    distance 17.45
+    //      32    distance 19.19
+    //      33    distance 21.11
+    //
+    //
     //    use String formatting to display distances to 2 decimal places
-    // and return total number of weeks
+    //
+    //    Finally, your method should return the total number of weeks in the training schedule
 
 
 }
