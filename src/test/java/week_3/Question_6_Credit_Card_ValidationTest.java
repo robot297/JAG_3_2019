@@ -24,6 +24,7 @@ public class Question_6_Credit_Card_ValidationTest extends TestCase {
         //Invalid - too short
         assertFalse("4445556666 should be invalid - too short", q6.isVisaCreditCardNumberValid("4445556666"));
         assertFalse("44455556666777 should be invalid - too short", q6.isVisaCreditCardNumberValid("44455556666777"));
+        assertFalse("Empty String should be invalid - too short", q6.isVisaCreditCardNumberValid(""));
 
         //Invalid - too long
         assertFalse("44455566664445556666 should be invalid - too long", q6.isVisaCreditCardNumberValid("44455566664445556666"));
