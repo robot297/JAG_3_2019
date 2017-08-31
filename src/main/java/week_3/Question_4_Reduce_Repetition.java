@@ -3,16 +3,22 @@ package week_3;
 import static input.InputUtils.*;
 
 /**
- **
- * Start with this program.
- *
- * Notice there are several drinks, and the code to get the total sales for each is very similar.
- * Can you create and use another method (or methods) that will be called from
- * the coffeeShop method, to make this program less repetitive?
- *
- * Hint: would an array of drink names help?
- * Hint: create a method that takes the name of a drink as an argument. This method can calculate sales for that drink.
+ 
+ 
+ Start with the `Question_4_Reduce_Repetition.java` program.
+ 
+ Notice there are several drinks, and the code to get the total sales for each is very similar.
+ Can you create and use another method (or methods) that will be called from the coffeeShop method,
+ to make this program less repetitive?
+ 
+ Hint: would an array of drink names help?
+ Hint: create a method that takes the name of a drink as an argument. This method can calculate sales for that drink.
+ 
+ The total lines of code in your program should get smaller. BUT, don't just delete lines,
+ or compress more than one line together. Your code will be reviewed for clarity, readability, and logic.
  */
+
+
 public class Question_4_Reduce_Repetition {
 
 

@@ -2,33 +2,48 @@ package week_3;
 
 /**
  *
+ *
  Write a method called stringToIntArray which takes a number represented as a
  String as an argument, for example "12345" or "4321432143214321" ;
  and returns the digits of that number in an array.
-
+ 
  Your method should create an int[] array with one digit of your number per
  element, and return this array.
-
+ 
  If any of the characters in the string are not numbers, return null.
-
-
+ 
+ 
  So, if the user enters
-
+ 
  "12345"
-
+ 
  then your method should return this array :
-
+ 
  { 1, 2, 3, 4, 5 }
-
-
+ 
+ 
  if the user enters
-
+ 
  "abc"
-
+ 
  then your method should return null.
-
-
+ 
+ 
+ if the user enters
+ 
+ "123b456"
+ 
+ then your method should return null, because of the 'b' character.
+ 
+ 
+ If the user enters an empty string, your method should return null.
+ 
+ If the method is called with a null String, your method should return null.
+ 
  */
+
+
+
 public class Question_5_String_To_Int_Array {
 
     public static void main(String[] args) {

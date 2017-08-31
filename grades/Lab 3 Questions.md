@@ -82,38 +82,61 @@
 
 ### Question 4 Reduce Repetition
 
-Start with the `Question_4_Reduce_Repetition.java` program.
+  Start with the `Question_4_Reduce_Repetition.java` program.
  
-  Notice there are several drinks, and the code to get the total sales for each is very similar. Can you create and use another method (or methods) that will be called from the coffeeShop method, to make this program less repetitive?
+  Notice there are several drinks, and the code to get the total sales for each is very similar. 
+  Can you create and use another method (or methods) that will be called from the coffeeShop method, 
+  to make this program less repetitive?
 
   Hint: would an array of drink names help?
+  Hint: create a method that takes the name of a drink as an argument. This method can calculate sales for that drink.
+   
+  The total lines of code in your program should get smaller. BUT, don't just delete lines, 
+  or compress more than one line together. Your code will be reviewed for clarity, readability, and logic. 
 
 ### Question 5 String To int Array
 
-  Write a method called stringToIntArray which takes a number represented as a
-  String as an argument, for example "12345" or "4321432143214321" ;
-  and returns the digits of that number in an array.
+/**
+ *
+ *
+ Write a method called stringToIntArray which takes a number represented as a
+ String as an argument, for example "12345" or "4321432143214321" ;
+ and returns the digits of that number in an array.
+
+ Your method should create an int[] array with one digit of your number per
+ element, and return this array.
+
+ If any of the characters in the string are not numbers, return null.
+
+
+ So, if the user enters
+
+ "12345"
+
+ then your method should return this array :
+
+ { 1, 2, 3, 4, 5 }
+
+
+ if the user enters
+
+ "abc"
+
+ then your method should return null.
  
-  Your method should create an int[] array with one digit of your number per
-  element, and return this array.
  
-  If any of the characters in the string are not numbers, return null.
+ if the user enters
  
+ "123b456"
  
-  So, if the user enters
- 
- ` "12345" `
- 
-  then your method should return this array :
- 
- ` { 1, 2, 3, 4, 5 } `
+ then your method should return null, because of the 'b' character.
  
  
-  if the user enters
+ If the user enters an empty string, your method should return null.
  
-  ` "abc" `
- 
-  then your method should return null.
+ If the method is called with a null String, your method should return null.
+
+ */
   
   
 ### Question 6
