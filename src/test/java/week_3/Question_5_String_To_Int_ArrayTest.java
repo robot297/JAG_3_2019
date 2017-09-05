@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.text.ParseException;
+import java.util.Arrays;
 
 import static org.junit.Assert.*;
 import static test_utils.MethodUtil.findMethod;
@@ -41,8 +42,8 @@ public class Question_5_String_To_Int_ArrayTest {
         
         try {
             int[] arr = (int[]) method.invoke(q5, input);
-            assertArrayEquals("Your stringToIntArray method, called with the String  should return the array [1, 2, 3, 4, 5]", expectedOut, arr);
-            
+            assertArrayEquals("Your stringToIntArray method, called with the String " + input + " should return the array " + Arrays.toString(expectedOut), expectedOut, arr);
+    
         } catch (InvocationTargetException ie) {
             String message = "When called with the String " + input + " your method threw a " + ie.getTargetException().getClass().toString() + ", " + ie.getTargetException().getMessage();
             fail(message);
