@@ -22,8 +22,9 @@ public class Question_1_MPGTest extends TestCase {
             // Create a new object for our class
             Question_1_MPG q2 = new Question_1_MPG();
 
-            // Call the discovered mgp method with some example arguments
+            // Call the discovered mpg method with some example arguments
 
+            // 10 miles, 4 gallons of gas, should be 10/4 = 2.5 MPG
             Object result = mpg.invoke(q2, 10, 4);
 
             // Returns the correct type?
@@ -35,6 +36,7 @@ public class Question_1_MPGTest extends TestCase {
             assertEquals(resultDouble, 2.5);
 
             // Check again, with some other example values
+            // 300 miles, 4.1 gallons of gas should return 300/4.1 = 73.170731
             result = mpg.invoke(q2, 300, 4.1);
             resultDouble = (double) result;
             assertEquals(resultDouble, 73.170731, 0.01);
