@@ -30,9 +30,9 @@ public class Question_1_MPG {
 
         // TODO Ask user for gallons of gas used, as a double
 
-        // TODO Create a function called mpg(miles, gas). This function will calculate and return the MPG
+        // TODO Create a method called mpg(miles, gas). This method will calculate and return the MPG
 
-        // TODO Call the mpg function and save the returned MPG value
+        // TODO Call the mpg method and save the returned MPG value
 
         // TODO Print the return value.
 
@@ -40,9 +40,9 @@ public class Question_1_MPG {
 
 
 
-    // TODO create a function called "mpg".
+    // TODO create a public method called "mpg".
     // Make sure you use the name mpg since the tests expect to find a method with that name.
-    // The function takes two arguments, miles driven and gas used, in that order.
+    // The method takes two arguments, miles driven and gas used, in that order.
     // It will calculate and return the MPG for this journey.
 
 
