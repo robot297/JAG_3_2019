@@ -163,7 +163,7 @@
 
  Here's how the validation is done:
 
- http://web.eecs.umich.edu/~bartlett/credit_card_number.html
+https://en.wikipedia.org/wiki/Luhn_algorithm
 
  Process each digit as follows.
  If the digit is in an even position, multiply that digit by 2.
