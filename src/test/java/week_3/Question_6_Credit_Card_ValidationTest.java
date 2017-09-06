@@ -31,7 +31,7 @@ public class Question_6_Credit_Card_ValidationTest extends TestCase {
         assertFalse("44445555666677778 should be invalid - 17 digits, too long", q6.isVisaCreditCardNumberValid("44445555666677778"));
 
 
-        //Invalid - doesn't start with 4
+        //Invalid - right length, but doesn't start with 4
         assertFalse("5123189756461236 should be invalid - doesn't start with 4", q6.isVisaCreditCardNumberValid("5123189756461236"));
 
         //Invalid - check digit wrong
