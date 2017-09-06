@@ -27,8 +27,8 @@ public class Question_6_Credit_Card_ValidationTest extends TestCase {
         assertFalse("Empty String should be invalid - too short", q6.isVisaCreditCardNumberValid(""));
 
         //Invalid - too long
-        assertFalse("44455566664445556666 should be invalid - too long", q6.isVisaCreditCardNumberValid("44455566664445556666"));
-        assertFalse("4445555666677777 should be invalid - too long", q6.isVisaCreditCardNumberValid("4445555666677777"));
+        assertFalse("444455566664445556666777 should be invalid - too long", q6.isVisaCreditCardNumberValid("444455566664445556666777"));
+        assertFalse("44445555666677778 should be invalid - 17 digits, too long", q6.isVisaCreditCardNumberValid("44445555666677778"));
 
 
         //Invalid - doesn't start with 4
