@@ -28,7 +28,7 @@ public class Question_1_MPGTest extends TestCase {
             Object result = mpg.invoke(q2, 10, 4);
 
             // Returns the correct type?
-            assertTrue("Make sure you return a double number from mpg method", result instanceof Double);
+            assertTrue("Make sure you return a double number from the mpg method", result instanceof Double);
 
             // Convert the value to a double
             double resultDouble = (double) result;
@@ -44,7 +44,7 @@ public class Question_1_MPGTest extends TestCase {
 
         } catch (Exception e) {
             // Catch for method.invoke. Will fail if the wrong number of method arguments are given, or are not the correct types
-            fail("Check that the mpg method takes two double arguments, the miles and gas used, in that order.");
+            fail("Check that the mpg method takes two double arguments, the miles driven,  and gas used, in that order.");
         }
 
     }

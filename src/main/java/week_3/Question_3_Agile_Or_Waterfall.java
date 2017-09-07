@@ -18,15 +18,15 @@ package week_3;
  •	If the customer will be requiring working models early in the process  [ Yes -> Agile ]
 
  Write a method called agileOrWaterfall,
- which takes this data as integer and boolean arguments.
+ which takes this data as 1 integer and 5 boolean arguments.
  The arguments should be provided in the order given above.
- and returns a suggestion on whether Agile, or Waterfall, or either, may be is best.
+ It will return a suggestion on whether Agile, or Waterfall, or either, would be best.
 
  There's a yesNoInput method in InputUtils.
 
  Use this method in your program to suggest which methodology to use.
 
- Your main method should do all of the asking questions and printing the result.
+ Your main method should do the task of asking questions and printing the result.
  Your agileOrWaterfall method should be given the relevant data, and do the processing,
  deciding, and returning the result.
 

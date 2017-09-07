@@ -58,6 +58,8 @@ import static input.InputUtils.stringInput;
  and verify that the number is now invalid.
 
  Also remember to check that the String is the right length, starts with 4, and contains only numbers.
+ 
+ This website can help you double check if your test numbers are valid or not:  http://www.validcreditcardnumber.com/
 
  */
 public class Question_6_Credit_Card_Validation {

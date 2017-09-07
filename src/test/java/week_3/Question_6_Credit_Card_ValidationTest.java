@@ -29,14 +29,13 @@ public class Question_6_Credit_Card_ValidationTest extends TestCase {
         //Invalid - too long
         assertFalse("444455566664445556666777 should be invalid - too long", q6.isVisaCreditCardNumberValid("444455566664445556666777"));
         assertFalse("44445555666677778 should be invalid - 17 digits, too long", q6.isVisaCreditCardNumberValid("44445555666677778"));
-
-
+        
         //Invalid - right length, but doesn't start with 4
         assertFalse("5123189756461236 should be invalid - doesn't start with 4", q6.isVisaCreditCardNumberValid("5123189756461236"));
 
         //Invalid - check digit wrong
         // ...can create an array or list of invalid inputs and use a loop to test them all
-        String[] invalidInputs = {"4567568658341240", "4658907842345226", "4904563343456566"};
+        String[] invalidInputs = {"4567568658341240", "4658907842345226", "4904563343456566", "4111111111111112"};
 
         for (String invalid : invalidInputs) {
             assertFalse(invalid + " should be invalid - check digit is wrong", q6.isVisaCreditCardNumberValid(invalid));

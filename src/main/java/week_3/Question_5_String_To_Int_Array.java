@@ -2,7 +2,6 @@ package week_3;
 
 /**
  *
- *
  Write a method called stringToIntArray which takes a number represented as a
  String as an argument, for example "12345" or "4321432143214321" ;
  and returns the digits of that number in an array.
@@ -40,6 +39,9 @@ package week_3;
  
  If the method is called with a null String, your method should return null.
  
+ You'll need to look up some Java library methods. You may need some methods from
+ some or all of these library classes: String, Character, Integer.
+ 
  */
 
 
@@ -63,6 +65,7 @@ public class Question_5_String_To_Int_Array {
    // TODO Create a method called stringToIntArray(String)
     // Convert the String to an integer array of the digits
     // If the String contains non-numeric characters, return null.
+    // If the String is null, return null.
 
 
 }
