@@ -75,7 +75,10 @@ public class Question_4_Reduce_RepetitionTest {
         }
         
         // Assert that one of the methods did the right thing for a drink name
-        assertTrue("Did not find any methods with the expected sales calculating behavior", foundMethodWithCorrectBehavior);
+        assertTrue("Did not find a method with sales calculating behavior. " +
+                "\nThere are other ways to solve this problem, so this may not be an error in your code. " +
+                "\nYour code will be reviewed and graded by a human. " +
+                "\nIf you are confident in your solution, you can ignore this test failure. ", foundMethodWithCorrectBehavior);
         
     }
     
