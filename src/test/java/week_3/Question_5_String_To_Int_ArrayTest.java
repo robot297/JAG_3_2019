@@ -27,9 +27,11 @@ public class Question_5_String_To_Int_ArrayTest {
         
         // Empty String
         testForInput("", null);
-        
+    
+    
         // Null String
         testForInput(null, null);
+    
         
     }
     
@@ -42,7 +44,7 @@ public class Question_5_String_To_Int_ArrayTest {
         
         try {
             int[] arr = (int[]) method.invoke(q5, input);
-            assertArrayEquals("Your stringToIntArray method, called with the String " + input + " should return the array " + Arrays.toString(expectedOut), expectedOut, arr);
+            assertArrayEquals("Your stringToIntArray method, called with the String " + ( (input == null) ? "null" : input ) + " should return the array " + Arrays.toString(expectedOut), expectedOut, arr);
     
         } catch (InvocationTargetException ie) {
             String message = "When called with the String " + input + " your method threw a " + ie.getTargetException().getClass().toString() + ", " + ie.getTargetException().getMessage();

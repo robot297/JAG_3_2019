@@ -66,6 +66,5 @@ public class Question_5_String_To_Int_Array {
     // Convert the String to an integer array of the digits
     // If the String contains non-numeric characters, return null.
     // If the String is null, return null.
-
-
+    
 }
