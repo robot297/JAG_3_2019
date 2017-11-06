@@ -22,19 +22,19 @@
       "question" : 4,
       "java_file": "Question_4_Reduce_Repetition",
       "test_file": "Question_4_Reduce_RepetitionTest",
-      "points": 3
+      "points": 3.5
     },
     {
       "question" : 5,
       "java_file": "Question_5_String_To_Int_Array",
       "test_file": "Question_5_String_To_Int_ArrayTest",
-      "points": 2
+      "points": 3.5
     },
     {
       "question" : 6,
       "java_file": "Question_6_Credit_Card_Validation",
       "test_file": "Question_6_Credit_Card_ValidationTest",
-      "points": 4
+      "points": 5
     }
 
   ]
