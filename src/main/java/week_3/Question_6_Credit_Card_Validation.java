@@ -4,17 +4,17 @@ import static input.InputUtils.stringInput;
 
 /**
  *
- Credit card numbers have a check digit at the end that can be used to check if the number is entered correctly.
- This is how websites can indicate that your card number is invalid without asking your bank.
+ Credit card numbers have a check digit at the end that can be used to help check if the number is entered correctly.
+ This is how websites can indicate that a mis-typed card number is invalid before trying to process the transaction with your bank.
 
  The last digit of your credit card number is a check digit. When you enter a credit card number, an algorithm
  does a calculation with the digits in the number, to make sure that the number follows a certain pattern.
- This helps catch mis-entered credit card numbers, for example, if two digits are transposed.
+ This helps catch mis-entered credit card numbers, for example, if two digits are switched.
 
- (It doesn’t check if the account is valid – just if the digits are most likely entered correctly.)
+ (It doesn't check if the account is valid – just if the digits are most likely entered correctly.)
 
  Credit cards also begin with a specific number or numbers and must be a certain length. For example,
- all Visa card numbers begin with 4. And Visa card numbers should be 16 digits.
+ all Visa card numbers begin with 4. And, Visa card numbers should be 16 digits.
 
  And, credit card numbers should only be digits. No spaces, dashes, letters, or other characters.
 
@@ -62,6 +62,8 @@ import static input.InputUtils.stringInput;
  This website can help you double check if your test numbers are valid or not:  http://www.validcreditcardnumber.com/
 
  */
+
+
 public class Question_6_Credit_Card_Validation {
 
     public static void main(String[] args) {

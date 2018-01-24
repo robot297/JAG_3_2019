@@ -9,9 +9,8 @@ public class Question_1_MPGTest extends TestCase {
 
     public void testMPGCalculations() {
 
-        // So this method doesn't exist when this test is being
-        // written.
-        //
+        // So this method doesn't exist when this test is being written.
+        
         // Use reflection to find and call the new
         // mpg method that the student has written.
 
@@ -33,18 +32,19 @@ public class Question_1_MPGTest extends TestCase {
             // Convert the value to a double
             double resultDouble = (double) result;
             // Check if it is the expected values
-            assertEquals(resultDouble, 2.5);
+            assertEquals("For 10 miles driven, and 2.5 gallons of gas, the MPG should be 2.5", resultDouble, 2.5);
 
             // Check again, with some other example values
             // 300 miles, 4.1 gallons of gas should return 300/4.1 = 73.170731
             result = mpg.invoke(q2, 300, 4.1);
             resultDouble = (double) result;
-            assertEquals(resultDouble, 73.170731, 0.01);
+            assertEquals("\"For 300 miles driven, and 4.1 gallons of gas, the MPG should be 73.170731. " +
+                    "\nDo not use any number formatting or rounding in your method. Return the exact calculated value.", resultDouble, 73.170731, 0.01);
 
 
         } catch (Exception e) {
             // Catch for method.invoke. Will fail if the wrong number of method arguments are given, or are not the correct types
-            fail("Check that the mpg method takes two double arguments, the miles driven,  and gas used, in that order.");
+            fail("Check that the mpg method takes two double arguments, the miles driven, and gas used, in that order.");
         }
 
     }

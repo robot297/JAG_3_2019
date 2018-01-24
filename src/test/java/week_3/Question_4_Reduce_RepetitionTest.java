@@ -25,6 +25,9 @@ public class Question_4_Reduce_RepetitionTest {
     
     
     // This one is tricky to test since student must decide how to restructure the program.
+    // This is not a particularly good test. Students, if you are reading this, the instructor is going
+    // to review your code and that's going to be the major factor in your grade for this assignment.
+    // There are some tricks you can use to get around the line-counting code :)
     
     @Test
     public void testCoffeeShop() throws Exception {
@@ -100,11 +103,12 @@ public class Question_4_Reduce_RepetitionTest {
         
         boolean inBlockComment = false;  // Flag to identify if line is part of multi-line comment.
         
-        while ( (line = reader.readLine()) != null){
+        while ( (line = reader.readLine()) != null ){
             
             line = line.trim();
             
-            if (line.startsWith("/*")) { inBlockComment = true;
+            if (line.startsWith("/*")) {    // todo this doesn't catch  /* comments written like this */
+                inBlockComment = true;
                 // Does this comment start and end on the same line?
                 if (line.contains("*/")) {
                     inBlockComment = false;

@@ -16,15 +16,19 @@ package week_3;
  •	If there are stringent quality control requirements   [ Yes -> Waterfall ]
  •	If early integration is desirable   [ Yes -> Agile ]
  •	If the customer will be requiring working models early in the process  [ Yes -> Agile ]
-
+ 
+ There's a yesNoInput method in the InputUtils library that returns boolean values from user input.
+ 
+ 
  Write a method called agileOrWaterfall,
- which takes this data as 1 integer and 5 boolean arguments.
- The arguments should be provided in the order given above.
- It will return a suggestion on whether Agile, or Waterfall, or either, would be best.
-
- There's a yesNoInput method in InputUtils.
-
- Use this method in your program to suggest which methodology to use.
+ which takes this data as integer and boolean arguments.
+ **The arguments should be provided in the order given above**.
+ `agileOrWaterfall` will return a String, a suggestion on whether Agile, or Waterfall, or either, may be is best.
+ 
+ Notice that there are three global constants AGILE, WATERFALL and EITHER.
+ Your agileOrWaterfall method should return one of these Strings.
+ 
+ Use your agileOrWaterfall method in your program to suggest which methodology to use.
 
  Your main method should do the task of asking questions and printing the result.
  Your agileOrWaterfall method should be given the relevant data, and do the processing,

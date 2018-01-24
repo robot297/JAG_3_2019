@@ -65,28 +65,31 @@ public class Question_2_Marathon {
 
     // TODO write a method called trainingSchedule
     // It will take 3 double arguments: currentDistance, targetDistance, and percentIncrease
+    // Ensure that you use three double arguments, in this order.
+    //
     // The method will print a table of weeks and distances.
-    // The final row should have a distance greater or equal to the target distance.
+    // The final row should be a distance greater or equal to the target distance.
     // the table columns should be in that order (weeks then distance)
     //
     //    Example table for start 1 miles, target 20, increase 10%
     //
-    //     Week      Distance
-    //      1     distance 1.00
-    //      2     distance 1.10
-    //      3     distance 1.21
-    //      4     distance 1.33
+    //     Week   Distance
+    //      1      1.00
+    //      2      1.10
+    //      3      1.21
+    //      4      1.33
     //
     //      ..... more rows here .....
     //
-    //      31    distance 17.45
-    //      32    distance 19.19
-    //      33    distance 21.11
+    //      31     17.45
+    //      32     19.19
+    //      33     21.11
     //
     //
-    //    use String formatting to display distances to 2 decimal places
+    // Note that the last line is the first distance greater than or equal to the target distance.
+    // Use String formatting to display distances to 2 decimal places. Use String.format() or System.out.printf().
     //
-    //    Finally, your method should return the total number of weeks in the training schedule
+    // Finally, your method should return the total number of weeks in the training schedule
 
 
 }

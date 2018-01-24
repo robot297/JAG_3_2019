@@ -3,7 +3,7 @@
 ### Question 1 MPG
 
  Write a program to calculate the MPG for a car journey.
- (MPG = Miles per gallon, calculate by dividing number of miles by number of gallons of gas used).
+ (MPG = Miles per gallon, calculate by dividing number of miles, by number of gallons of gas used).
 
  Write a method called mpg that has two arguments, in the following order:
  - a double to represent the number of miles driven, and
@@ -14,6 +14,10 @@
  -	Ask the user for the miles and gas used
  -	Call your method
  -	Use the returned value to display the MPG
+ 
+ 
+Make sure you use the name `mpg` for your method, since the test expects to find a method with that name.
+The method takes two arguments, miles driven and gas used, in that order.
 
 ### Question 2 Marathon
     
@@ -54,127 +58,124 @@
 
 ### Question 3 Agile or Waterfall
 
- Write a program that can help decide if a particular programming project
- is best solved using a Waterfall or Agile methodology.
+Write a program that can help decide if a particular programming project
+is best solved using a Waterfall or Agile methodology.
 
- Your program should ask the user:
+Your program should ask the user:
 
- *	How many programmers will be on the team.  More than 30 programmers -> Waterfall
- *	If there needs to be firm deadlines and a fixed schedule. Yes - > Waterfall
- *	If the programmers have experience in requirements, analysis and testing as well as coding. Yes - > Agile
- *	If there are stringent quality control requirements. Yes -> Waterfall 
- *	If early integration is desirable.    Yes -> Agile
- *	If the customer will be requiring working models early in the process. Yes -> Agile 
+*	How many programmers will be on the team.  More than 30 programmers -> Waterfall
+*	If there needs to be firm deadlines and a fixed schedule. Yes - > Waterfall
+*	If the programmers have experience in requirements, analysis and testing as well as coding. Yes - > Agile
+*	If there are stringent quality control requirements. Yes -> Waterfall 
+*	If early integration is desirable.    Yes -> Agile
+*	If the customer will be requiring working models early in the process. Yes -> Agile 
 
- Write a method called agileOrWaterfall,
- which takes this data as integer and boolean arguments.
- The arguments should be provided in the order given above.
- and returns a suggestion on whether Agile, or Waterfall, or either, may be is best.
+There's a `yesNoInput` method in the InputUtils library that returns boolean values from user input.
 
- There's a yesNoInput method in `InputUtils.java`.
+Write a method called agileOrWaterfall, which takes this data as integer and boolean arguments.
+**The arguments should be provided in the order given above**.
+`agileOrWaterfall` will return a String, a suggestion on whether Agile, or Waterfall, or either, may be is best.
 
- Use this method in your program to suggest which methodology to use.
+Notice that there are three global constants `AGILE`, `WATERFALL` and `EITHER`. Your `agileOrWaterfall` method should return one of these Strings. 
 
- Your main method should do all of the asking questions and printing the result.
- Your agileOrWaterfall method should be given the relevant data, and do the processing,
- deciding, and returning the result.
+Use your `agileOrWaterfall` method in your program to suggest which methodology to use.
+
+Your main method should do all of the asking questions and printing the result.
+Your agileOrWaterfall method should be given the relevant data, and do the processing,
+deciding, and returning the result.
 
 
 ### Question 4 Reduce Repetition
 
-  Start with the `Question_4_Reduce_Repetition.java` program.
- 
-  Notice there are several drinks, and the code to get the total sales for each is very similar. 
-  Can you create and use another method (or methods) that will be called from the coffeeShop method, 
-  to make this program less repetitive?
+Start with the `Question_4_Reduce_Repetition.java` program.
 
-  Hint: would an array of drink names help?
-  Hint: create a method that takes the name of a drink as an argument. This method can calculate sales for that drink.
-   
-  The total lines of code in your program should get smaller. BUT, don't just delete lines, 
-  or compress more than one line together. Your code will be reviewed for clarity, readability, and logic. 
+Notice there are several drinks, and the code to get the total sales for each is very similar. 
+Can you create and use another method (or methods) that will be called from the coffeeShop method, 
+to make this program less repetitive?
+
+Hint: would an array of drink names help?
+Hint: create a method that takes the name of a drink as an argument. This method can calculate sales for that drink.
+
+The total lines of code in your program should get smaller. BUT, don't just delete lines, 
+or compress more than one line together. Your code will be reviewed for clarity, readability, and logic. 
 
 ### Question 5 String To int Array
 
-/**
- *
- *
- Write a method called stringToIntArray which takes a number represented as a
- String as an argument, for example "12345" or "4321432143214321" ;
- and returns the digits of that number in an array.
 
- Your method should create an int[] array with one digit of your number per
- element, and return this array.
+Write a method called stringToIntArray which takes a number represented as a
+String as an argument, for example "12345" or "4321432143214321" ;
+and returns the digits of that number in an array.
 
- If any of the characters in the string are not numbers, return null.
+Your method should create an int[] array with one digit of your number per
+element, and return this array.
+
+If any of the characters in the string are not numbers, return null.
 
 
- So, if the user enters
+So, if the user enters
 
- "12345"
+"12345"
 
- then your method should return this array :
+then your method should return this array :
 
- { 1, 2, 3, 4, 5 }
+{ 1, 2, 3, 4, 5 }
 
 
- if the user enters
+if the user enters
 
- "abc"
+"abc"
 
- then your method should return null.
- 
- 
- if the user enters
- 
- "123b456"
- 
- then your method should return null, because of the 'b' character.
- 
- 
- If the user enters an empty string, your method should return null.
- 
- If the method is called with a null String, your method should return null.
+then your method should return null.
 
- */
+
+if the user enters
+
+"123b456"
+
+then your method should return null, because of the 'b' character.
+
+If the user enters an empty string, your method should return null.
+
+If the method is called with a null String, your method should return null.
+
   
   
 ### Question 6
 
 
- Credit card numbers have a check digit at the end that can be used to check if the number is entered correctly.
- This is how websites can indicate that your card number is invalid without asking your bank.
+Credit card numbers have a check digit at the end that can be used to check if the number is entered correctly.
+This is how websites can indicate that your card number is is mis-typed before trying to process the transaction.
 
- The last digit of your credit card number is a check digit. When you enter a credit card number, an algorithm
- does a calculation with the digits in the number, to make sure that the number follows a certain pattern.
- This helps catch mis-entered credit card numbers, for example, if two digits are transposed.
+The last digit of your credit card number is a check digit. When you enter a credit card number, an algorithm
+does a calculation with the digits in the number, to make sure that the number follows a certain pattern.
+This helps catch mis-entered credit card numbers, for example, if two digits are transposed.
 
- (It doesn’t check if the account is valid – just if the digits are most likely entered correctly.)
+(It doesn't check if the account is valid – just if the digits are most likely entered correctly.)
 
- Credit cards also begin with a specific number or numbers and must be a certain length. For example,
- all Visa card numbers begin with 4. And Visa card numbers should be 16 digits.
+Credit cards also begin with a specific number or numbers and must be a certain length. For example,
+all Visa card numbers begin with 4. And Visa card numbers should be 16 digits.
 
- And, credit card numbers should only be digits. No spaces, dashes, letters, or other characters.
+And, credit card numbers should only be digits. No spaces, dashes, letters, or other characters.
 
- Write a program that asks a user for a Visa credit card number. Save this as a String.
+Write a program that asks a user for a Visa credit card number. Save this as a String.
 
- Write a method called isVisaCreditCardNumberValid(String cardNumber) to examine the String, and decide
- if the credit card number that it represents is valid or not.  Your method should return a boolean value.
+Write a method called isVisaCreditCardNumberValid(String cardNumber) to examine the String, and decide
+if the credit card number that it represents is valid or not.  Your method should return a boolean value.
 
- Here's how the validation is done:
+Here's how the validation is done:
 
 https://en.wikipedia.org/wiki/Luhn_algorithm
 
- Process each digit as follows.
- If the digit is in an even position, multiply that digit by 2.
- If the multiplied digit is 10 or more, add the digits in that number together. So if the digit is 6, 6x2 = 12, so add 1+2 = 3.
+Process each digit as follows.
+If the digit is in an even position, multiply that digit by 2.
+If the multiplied digit is 10 or more, add the digits in that number together. So if the digit is 6, 6x2 = 12, so add 1+2 = 3.
 
- Digits in odd positions stay as they are.
+Digits in odd positions stay as they are.
 
- Add together all of the processed digits. If the resulting sum divides by 10, the number is a valid one. Otherwise, it is not.
+Add together all of the processed digits. If the resulting sum divides by 10, the number is a valid one. Otherwise, it is not.
 
- For testing, here’s some example valid CC numbers, (unlikely to be actual numbers) which are valid credit
- card numbers according to the rules in the link above:
+For testing, here’s some example valid CC numbers, (unlikely to be actual numbers) which are valid credit
+card numbers according to the rules in the link above:
 
 ``` 
 4123123412341236
@@ -186,22 +187,22 @@ https://en.wikipedia.org/wiki/Luhn_algorithm
  
 | Digits| Double value of even positions | Add digits if doubled values is > 10 |  
 |-------|------------------------------- | -------------------------------------| 
-| 4 |  4x2 = 8	 | 8        |
-| 1	|  1        | 1        |
-| 2	|  2x2 = 4  | 4        |
-| 3	|  3        | 3        |
-| 4	|  4x2 = 8  | 8        |
-| 5	|  5        | 5        |
-| 6	|  6x2 = 12 | 1+2 = 3  |
-| 7	|  7        | 7        |
-| 8	|  8x2 = 16 | 1+6 = 7  |
-| 9	|  9        | 9        |
-| 0 |  0x2 = 0  | 0        |
-| 1 |  1        | 1        |
-| 2	|  2x2 = 4  | 4        |
-| 3 |	 3        | 3        |
-| 4	|  4x2=8	   | 8        |
-| 9 |  9        | 9        |
+| 4     |  4x2 = 8                       | 8                                    |
+| 1	    |  1                             | 1                                    |
+| 2	    |  2x2 = 4                       | 4                                    |
+| 3	    |  3                             | 3                                    |
+| 4	    |  4x2 = 8                       | 8                                    |
+| 5	    |  5                             | 5                                    |
+| 6	    |  6x2 = 12                      | 1+2 = 3                              |
+| 7	    |  7                             | 7                                    |
+| 8	    |  8x2 = 16                      | 1+6 = 7                              |
+| 9	    |  9                             | 9                                    |
+| 0     |  0x2 = 0                       | 0                                    |
+| 1     |  1                             | 1                                    |
+| 2	    |  2x2 = 4                       | 4                                    |
+| 3     |  3                             | 3                                    |
+| 4	    |  4x2=8                         | 8                                    |
+| 9     |  9                             | 9                                    |
 
  So the sum is 8 + 1 + 4 + 3 + 8 + 5 + 3 + 7 + +7 + 9 + 0 + 1 + 4 + 3 + 8 + 9 = 80.  
  80 divided by 10 has no remainder, so the card number 4123456789012349 is valid.

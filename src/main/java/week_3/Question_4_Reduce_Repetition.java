@@ -5,7 +5,7 @@ import static input.InputUtils.*;
 /**
  
  
- Start with the `Question_4_Reduce_Repetition.java` program.
+ Refactor this program to make it less repetitive.
  
  Notice there are several drinks, and the code to get the total sales for each is very similar.
  Can you create and use another method (or methods) that will be called from the coffeeShop method,
