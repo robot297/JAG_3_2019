@@ -67,7 +67,7 @@ public class Question_5_String_To_Int_Array {
    // TODO Create a public method called stringToIntArray(String)
     // Convert the String to an integer array of the digits
     // If the String contains non-numeric characters, return null.
-    // If the String is null, return null.
+    // If the String is null, return null. Hint: test if the string is null before trying to call any other methods on it.
     // A statement like
     //    return null;
     // Returns a null value.
