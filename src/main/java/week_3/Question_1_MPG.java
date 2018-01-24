@@ -41,6 +41,8 @@ public class Question_1_MPG {
 
 
     // TODO create a public method called "mpg".
+    // A public method declaration begins with the word public, for example in the calculate() method above.
+    // The method needs to be public so the test can find it.
     // Make sure you use the name mpg since the test expects to find a method with that name.
     // The method takes two arguments, miles driven and gas used, in that order.
     // It will calculate and return the MPG for this journey.
