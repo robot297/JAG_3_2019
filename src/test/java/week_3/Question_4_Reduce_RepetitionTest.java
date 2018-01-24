@@ -72,7 +72,9 @@ public class Question_4_Reduce_RepetitionTest {
                     
                 } catch (Exception e) {
                     // Not a problem if the method being sought hasn't been found yet.
-                    System.out.println("Error trying to call" + m.getName() + " to calculate sales for a drink. If this isn't the right method to test, this is probably not an error. Will continue to search for prospective methods to test.");
+                    System.out.println("Error trying to call" + m.getName() +
+                            " to calculate sales for a drink. If this isn't the right method to test, " +
+                            "this is probably not an error. Will continue to search for prospective methods to test.");
                 }
             }
         }

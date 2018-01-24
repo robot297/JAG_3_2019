@@ -63,7 +63,7 @@ public class Question_2_Marathon {
     }
 
 
-    // TODO write a method called trainingSchedule
+    // TODO write a public method called trainingSchedule
     // It will take 3 double arguments: currentDistance, targetDistance, and percentIncrease
     // Ensure that you use three double arguments, in this order.
     //
