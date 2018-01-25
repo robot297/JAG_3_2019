@@ -1,12 +1,17 @@
 package week_3;
 
-import junit.framework.TestCase;
+import org.junit.Test;
 
 import java.lang.reflect.Method;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 import static test_utils.MethodUtil.*;
 
-public class Question_1_MPGTest extends TestCase {
+public class Question_1_MPGTest {
 
+    @Test(timeout=3000)
     public void testMPGCalculations() {
 
         // So this method doesn't exist when this test is being written.

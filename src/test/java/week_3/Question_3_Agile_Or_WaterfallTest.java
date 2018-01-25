@@ -2,12 +2,16 @@ package week_3;
 
 import junit.framework.TestCase;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 import static test_utils.MethodUtil.*;
 
 import java.lang.reflect.Method;
 
-public class Question_3_Agile_Or_WaterfallTest extends TestCase {
-
+public class Question_3_Agile_Or_WaterfallTest  {
+    
+    @Test(timeout=3000)
     public void testAgileOrWaterfallMethodology() throws Exception {
 
         Class[] params = { int.class, boolean.class, boolean.class, boolean.class, boolean.class, boolean.class} ;

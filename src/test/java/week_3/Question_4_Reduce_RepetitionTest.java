@@ -29,7 +29,7 @@ public class Question_4_Reduce_RepetitionTest {
     // to review your code and that's going to be the major factor in your grade for this assignment.
     // There are some tricks you can use to get around the line-counting code :)
     
-    @Test
+    @Test(timeout=3000)
     public void testCoffeeShop() throws Exception {
         
         // Force doubleInput and intInput to return certain values when called
@@ -88,7 +88,7 @@ public class Question_4_Reduce_RepetitionTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void testCoffeeShopFileSize() throws Exception {
         
         // Test to see if the number of lines of code in the file got smaller...

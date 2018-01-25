@@ -29,7 +29,7 @@ public class Question_2_MarathonTest  {
         
     }
     
-    @Test
+    @Test(timeout=3000)
     public void testTrainingScheduleWeeks() {
         
         try {
@@ -57,7 +57,7 @@ public class Question_2_MarathonTest  {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void testTrainingScheduleTable() throws Exception {
         
         catchStandardOut();   // Save everything the program prints to the terminal.

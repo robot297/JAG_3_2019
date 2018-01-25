@@ -6,9 +6,10 @@ import org.junit.Test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+
 public class Question_6_Credit_Card_ValidationTest {
 
-    @Test
+    @Test(timeout=3000)
     public void testIsCreditCardValid() {
         
         Question_6_Credit_Card_Validation q6 = new Question_6_Credit_Card_Validation();
@@ -22,7 +23,7 @@ public class Question_6_Credit_Card_ValidationTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void testInvalidCardWrongLength() {
     
         Question_6_Credit_Card_Validation q6 = new Question_6_Credit_Card_Validation();
@@ -39,7 +40,7 @@ public class Question_6_Credit_Card_ValidationTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void testInvalidCardWrongStartDigit() {
     
         Question_6_Credit_Card_Validation q6 = new Question_6_Credit_Card_Validation();
@@ -50,7 +51,7 @@ public class Question_6_Credit_Card_ValidationTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void testInvalidCardWrongCheckDigit() {
         
         Question_6_Credit_Card_Validation q6 = new Question_6_Credit_Card_Validation();

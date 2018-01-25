@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.text.ParseException;
 import java.util.Arrays;
 
 import static org.junit.Assert.*;
@@ -12,7 +11,7 @@ import static test_utils.MethodUtil.findMethod;
 
 public class Question_5_String_To_Int_ArrayTest {
     
-    @Test
+    @Test(timeout=3000)
     public void testStringToIntArrayAllInt() {
     
         testForInput("7", new int[]{7});
@@ -21,7 +20,7 @@ public class Question_5_String_To_Int_ArrayTest {
     
     }
     
-    @Test
+    @Test(timeout=3000)
     public void testStringToIntArrayNonNumericReturnNull() {
     
         // Some or all non-numeric characters
@@ -32,7 +31,7 @@ public class Question_5_String_To_Int_ArrayTest {
     
     }
     
-    @Test
+    @Test(timeout=3000)
     public void testStringToIntArrayEmptyStringReturnNull() {
     
         // Empty String should return null
@@ -46,7 +45,7 @@ public class Question_5_String_To_Int_ArrayTest {
     }
     
     
-    @Test
+    @Test(timeout=3000)
     public void testStringToIntArrayNullStringReturnNull() {
         
         // Null String should return null
