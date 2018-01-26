@@ -85,9 +85,9 @@ public class Question_6_Credit_Card_Validation {
 
     public boolean isVisaCreditCardNumberValid(String cc) {
 
-        //TODO Replace with your code to process the credit card number, and determine if it is valid.
-
-        return false;
+        //TODO Delete the following line, and replace with your code to process the credit card number, and determine if it is valid.
+        throw new RuntimeException("Implement this method");
+        // TODO return true or false.
 
     }
 
