@@ -82,16 +82,23 @@ public class Question_4_Reduce_RepetitionTest {
     }
     
     
-    @Test(timeout=3000)
+    @Test(timeout = 3000)
     public void testCoffeeShop() throws Exception {
         
-        // Force doubleInput and intInput to return certain values when called
+        // Force doubleInput and intInput etc.  to return certain values when called
         mockStatic(InputUtils.class);
+        
         expect(InputUtils.doubleInput(anyString())).andReturn(2.51);
+        expect(InputUtils.positiveDoubleInput(anyString())).andReturn(2.51);
+        
         expect(InputUtils.intInput(anyString())).andReturn(30);
+        expect(InputUtils.positiveIntInput(anyString())).andReturn(30);
+        
+        expect(InputUtils.stringInput(anyString())).andReturn("Test Drink");
+        
         replay(InputUtils.class);
-        
-        
+    
+    
         Class coffee = Class.forName("week_3.Question_4_Reduce_Repetition");
         Method[] methods = coffee.getMethods();
         
