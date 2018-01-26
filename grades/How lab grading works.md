@@ -35,11 +35,11 @@ In the Before Launch section, verify that there is a Maven task listed, as in th
 
 If not, click on the + button in the Before Launch section. Select Run Maven Goal.
 
-<img src="/img/selectmnvtask.png">
+<img src="img/selectmnvtask.png">
 
 In the Command field, type `test -fn` and click OK.
 
-<img src="addmvncommand.png">
+<img src="img/addmvncommand.png">
 
 The Before Launch should now look like this
 
