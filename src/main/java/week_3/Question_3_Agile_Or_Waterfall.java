@@ -17,13 +17,17 @@ package week_3;
  •	If early integration is desirable   [ Yes -> Agile ]
  •	If the customer will be requiring working models early in the process  [ Yes -> Agile ]
  
- There's a yesNoInput method in the InputUtils library that returns boolean values from user input.
- 
+ There's a `yesNoInput` method in the InputUtils library that returns boolean values from yes/no user input.
+ (If the user types 'n' or 'no', the method returns false. If the user types 'y' or 'yes' the method returns true.)
  
  Write a method called agileOrWaterfall,
  which takes this data as integer and boolean arguments.
  **The arguments should be provided in the order given above**.
  `agileOrWaterfall` will return a String, a suggestion on whether Agile, or Waterfall, or either, may be is best.
+ 
+ To decide, check how many factors are in favor of Agile. If there are 4 or more factors in favor of Agile, then return `AGILE`.
+ If there are 4 or more factors in favor of Waterfall, return `WATERFALL`.
+ If there are an equal number of factors in favor of Agile and Waterfall, returns `EITHER`.
  
  Notice that there are three global constants AGILE, WATERFALL and EITHER.
  Your agileOrWaterfall method should return one of these Strings.
