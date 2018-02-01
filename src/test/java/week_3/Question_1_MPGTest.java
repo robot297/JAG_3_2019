@@ -37,14 +37,14 @@ public class Question_1_MPGTest {
             // Convert the value to a double
             double resultDouble = (double) result;
             // Check if it is the expected values
-            assertEquals("For 10 miles driven, and 2.5 gallons of gas, the MPG should be 2.5", resultDouble, 2.5);
+            assertEquals("For 10 miles driven, and 2.5 gallons of gas, the MPG should be 2.5", resultDouble, 2.5, 0.001);
 
             // Check again, with some other example values
             // 300 miles, 4.1 gallons of gas should return 300/4.1 = 73.170731
             result = mpg.invoke(q2, 300, 4.1);
             resultDouble = (double) result;
             assertEquals("\"For 300 miles driven, and 4.1 gallons of gas, the MPG should be 73.170731. " +
-                    "\nDo not use any number formatting or rounding in your method. Return the exact calculated value.", resultDouble, 73.170731, 0.01);
+                    "\nDo not use any number formatting or rounding in your method. Return the exact calculated value.", resultDouble, 73.170731, 0.001);
 
 
         } catch (Exception e) {
