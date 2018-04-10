@@ -38,8 +38,7 @@ public class Question_1_MPG {
 
     }
 
-
-
+    
     // TODO create a public method called "mpg".
     // A public method declaration begins with the word public, for example in the calculate() method above.
     // The method needs to be public so the test can find it.
