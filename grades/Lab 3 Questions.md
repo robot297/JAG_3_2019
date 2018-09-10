@@ -93,17 +93,23 @@ deciding, and returning the result.
 ### Question 4 Reduce Repetition
 
 Start with the `Question_4_Reduce_Repetition.java` program.
-
-Notice there are several drinks, and the code to get the total sales for each is very similar. 
-Can you create and use another method (or methods) that will be called from the coffeeShop method, 
+ 
+Notice there are several drinks, and the code to get the total sales for each is very similar.
+Can you create a new method that will be called from the coffeeShop method,
 to make this program less repetitive?
+ 
+Hint: create a method that takes the name of a drink as an argument. 
+This method can ask the user for data about that drink, calculate sales for that drink, and return the sales for that drink.
 
-Hint: would an array of drink names help?
-Hint: create a method that takes the name of a drink as an argument. This method can calculate sales for that drink.
+Hint: You are going to call your new method 5 times. But don't write 5 lines of code to call the method! 5 times is manageable, but what if there were 100 drinks? 
+Can you use an array of drink names, and a loop? Your drinks are 
+ 
+String[] drinks = { "coffee", "hot chocolate", "tea", "cappuccino", "mocha"};
 
-The total lines of code in your program should get smaller. BUT, don't just delete lines, 
-or compress more than one line together. Your code will be reviewed for clarity, readability, and logic. 
-
+The total lines of code in your program should get smaller. BUT, don't just delete lines,
+or compress more than one line together. Your code will be reviewed for clarity, readability, and logic.
+ 
+ 
 ### Question 5 String To int Array
 
 
