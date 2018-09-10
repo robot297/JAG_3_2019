@@ -21,7 +21,7 @@ public class Question_3_Agile_Or_WaterfallTest  {
     }
     
     @Test(timeout=3000)
-    public void testAgileOrWaterfallMethodology_Agile() throws Exception {
+    public void testAgileOrWaterfallMethodology_Agile() {
         
         try {
             
@@ -46,7 +46,7 @@ public class Question_3_Agile_Or_WaterfallTest  {
     
     
     @Test(timeout=3000)
-    public void testAgileOrWaterfallMethodology_Waterfall() throws Exception {
+    public void testAgileOrWaterfallMethodology_Waterfall() {
         
         try {
             
@@ -64,15 +64,12 @@ public class Question_3_Agile_Or_WaterfallTest  {
             //Either error in agileOrWaterfall method or wrong parameters
             fail("Check you have the correct method signature, returning the correct type. And check for errors in your agileOrWaterfall method");
         }
-        
-        
     }
     
     
     @Test(timeout=3000)
-    public void testAgileOrWaterfallMethodology_Either() throws Exception {
-        
-        
+    public void testAgileOrWaterfallMethodology_Either() {
+
         try {
             
             Question_3_Agile_Or_Waterfall q3 = new Question_3_Agile_Or_Waterfall();

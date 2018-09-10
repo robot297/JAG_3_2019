@@ -22,7 +22,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="Java Auto Grader - Week 3" target="1.8" />
+      <module name="Java Auto Grader - Week 3" target="10" />
       <module name="Java Auto Grader - Wk 2 3 4 go fishetc" target="1.8" />
       <module name="Java Auto Grader - Wk 2 etc" target="1.8" />
     </bytecodeTargetLevel>
