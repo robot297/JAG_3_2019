@@ -27,7 +27,7 @@ import static input.InputUtils.*;
 public class Question_4_Reduce_Repetition {
 
 
-    // You don't need to modify this line
+    // Don't modify this line
     public static void main(String[] args) {
         new Question_4_Reduce_Repetition().coffeeShop();
     }
@@ -67,6 +67,6 @@ public class Question_4_Reduce_Repetition {
         System.out.println("Total sales for the day are $"  + totalSales);
 
     }
-    
+
 }
 

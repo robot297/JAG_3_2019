@@ -1,6 +1,5 @@
 package week_3;
 
-
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
@@ -14,7 +13,7 @@ public class Question_6_Credit_Card_ValidationTest {
         
         Question_6_Credit_Card_Validation q6 = new Question_6_Credit_Card_Validation();
     
-        //Some "valid" credit card numbers. Unlikely to be real credit card numbers.
+        //Some "valid" credit card numbers, as far as the algorithm is concerned. Unlikely to be real credit card numbers.
     
         assertTrue("4123123412341236 should be valid", q6.isVisaCreditCardNumberValid("4123123412341236"));
         assertTrue("4000111122223339 should be valid", q6.isVisaCreditCardNumberValid("4000111122223339"));
@@ -64,10 +63,9 @@ public class Question_6_Credit_Card_ValidationTest {
             assertFalse(invalid + " should be invalid - check digit is wrong", q6.isVisaCreditCardNumberValid(invalid));
         }
 
-        // Invalid - contains non-numeric characters
+        // Invalid - strings of 16 characters but containing non-numeric characters
         String[] moreInvalidInputs = {"4567568p68341240", "QWERTYUIOP", "7642UIOP%^&*4364"};
 
-        // Java's for each loop
         for (String invalid : moreInvalidInputs) {
             assertFalse(invalid + " should be invalid, contains non-numeric characters", q6.isVisaCreditCardNumberValid(invalid));
         }

@@ -14,9 +14,9 @@ public class Question_5_String_To_Int_ArrayTest {
     @Test(timeout=3000)
     public void testStringToIntArrayAllInt() {
     
-        testForInput("7", new int[]{7});
-        testForInput("12345", new int[]{1, 2, 3, 4, 5});
-        testForInput("467468463453", new int[]{4, 6, 7, 4, 6, 8, 4, 6, 3, 4, 5, 3});
+        invokeStringToArrayMethod("7", new int[]{7});
+        invokeStringToArrayMethod("12345", new int[]{1, 2, 3, 4, 5});
+        invokeStringToArrayMethod("467468463453", new int[]{4, 6, 7, 4, 6, 8, 4, 6, 3, 4, 5, 3});
     
     }
     
@@ -24,23 +24,28 @@ public class Question_5_String_To_Int_ArrayTest {
     public void testStringToIntArrayNonNumericReturnNull() {
     
         // Some or all non-numeric characters
-        testForInput("!@#$%^&#%%$", null);
-        testForInput("pizza", null);
-        testForInput("098765g6543", null);
-        testForInput("a1234567", null);
+        invokeStringToArrayMethod("!@#$%^&#%%$", null);
+        invokeStringToArrayMethod("pizza", null);
+        invokeStringToArrayMethod("098765g6543", null);
+        invokeStringToArrayMethod("a1234567", null);
     
     }
     
     @Test(timeout=3000)
     public void testStringToIntArrayEmptyStringReturnNull() {
-    
+
         // Empty String should return null
-        testForInput("", null);
-    
+        invokeStringToArrayMethod("", null);
+
+    }
+
+    @Test(timeout=3000)
+    public void testStringToIntArrayWhitespaceStringReturnNull() {
+
         // White space Strings should return null
-        testForInput("    ", null);
-        testForInput("   \t ", null);
-        testForInput(" \t \n \t   ", null);
+        invokeStringToArrayMethod("    ", null);
+        invokeStringToArrayMethod("   \t ", null);
+        invokeStringToArrayMethod(" \t \n \t   ", null);
     
     }
     
@@ -49,12 +54,12 @@ public class Question_5_String_To_Int_ArrayTest {
     public void testStringToIntArrayNullStringReturnNull() {
         
         // Null String should return null
-        testForInput(null, null);
+        invokeStringToArrayMethod(null, null);
         
     }
     
     
-    private void testForInput(String input, int[] expectedOut) {
+    private void invokeStringToArrayMethod(String input, int[] expectedOut) {
         
         Method method = findMethod("week_3.Question_5_String_To_Int_Array", "stringToIntArray", new Class[]{String.class});
         

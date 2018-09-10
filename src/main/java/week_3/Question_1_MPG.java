@@ -45,6 +45,5 @@ public class Question_1_MPG {
     // Make sure you use the name mpg since the test expects to find a method with that name.
     // The method takes two arguments, miles driven and gas used, in that order.
     // It will calculate and return the MPG for this journey.
-    
 
 }
