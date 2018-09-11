@@ -41,14 +41,15 @@ package week_3;
  */
 public class Question_3_Agile_Or_Waterfall {
 
-    public String AGILE = "Agile";
-    public String WATERFALL = "Waterfall";
-    public String EITHER = "Either";
+    public final String AGILE = "Agile";
+    public final String WATERFALL = "Waterfall";
+    public final String EITHER = "Either";
 
-
+    // don't modify this part
     public static void main(String[] args) {
         new Question_3_Agile_Or_Waterfall().methodology();
     }
+
 
     public void methodology() {
 
@@ -58,9 +59,11 @@ public class Question_3_Agile_Or_Waterfall {
 
     }
 
+
     // TODO write a public agileOrWaterfall method. It should have this name, and take
     // the 6 arguments needed, in the same order given in the description.
-
-    // TODO this function should return one of the three Strings AGILE, WATERFALL or EITHER.
+    // TODO this function should a String - one of the three Strings AGILE, WATERFALL or EITHER.
+    // For example, if your method determines that Agile is best, write a statement like
+    //      return AGILE;  // return the value in the AGILE constant
 
 }

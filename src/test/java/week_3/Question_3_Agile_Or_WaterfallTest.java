@@ -17,9 +17,9 @@ public class Question_3_Agile_Or_WaterfallTest  {
     public void findStudentMethod(){
         Class[] params = { int.class, boolean.class, boolean.class, boolean.class, boolean.class, boolean.class} ;
         agileOrWaterfall = findMethod("week_3.Question_3_Agile_Or_Waterfall", "agileOrWaterfall", params);
-        
     }
-    
+
+
     @Test(timeout=3000)
     public void testAgileOrWaterfallMethodology_Agile() {
         
@@ -31,8 +31,8 @@ public class Question_3_Agile_Or_WaterfallTest  {
             String decision = (String) agileOrWaterfall.invoke(q3, 10, false, true, false, true, true);  // All for agile
             assertEquals("Team of 10, false, true, false, true, true should return Agile (all factors in favor of agile).", q3.AGILE, decision);
             
-            decision = (String) agileOrWaterfall.invoke(q3, 40, true, true, false, true, true);  // 4 our of 6 for agile
-            assertEquals("Team of 40, true, true, false, true, true should return  Agile (4 out of 6 factors in favor of agile).", q3.AGILE, decision);
+            decision = (String) agileOrWaterfall.invoke(q3, 40, true, true, false, true, true);  // 4 out of 6 for agile
+            assertEquals("Team of 40, true, true, false, true, true should return Agile (4 out of 6 factors in favor of agile).", q3.AGILE, decision);
             
             
         } catch (Exception e) {
