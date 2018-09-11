@@ -43,10 +43,10 @@ import static input.InputUtils.doubleInput;
  */
 
 
-public class Question_2_Marathon {
+public class Question_6_Marathon {
 
     public static void main(String[] args) {
-        new Question_2_Marathon().training();
+        new Question_6_Marathon().training();
     }
 
     public void training() {

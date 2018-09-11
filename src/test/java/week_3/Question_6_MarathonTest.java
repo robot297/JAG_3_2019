@@ -15,17 +15,17 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class Question_2_MarathonTest  {
+public class Question_6_MarathonTest {
     
     private Method training;
-    private Question_2_Marathon q2;
+    private Question_6_Marathon q2;
     
     @Before
     public void findTrainingMethod(){
         
         // Find trainingSchedule method that student has created
-        training = findMethod("week_3.Question_2_Marathon", "trainingSchedule", new Class[]{double.class, double.class, double.class});
-        q2 = new Question_2_Marathon();
+        training = findMethod("week_3.Question_6_Marathon", "trainingSchedule", new Class[]{double.class, double.class, double.class});
+        q2 = new Question_6_Marathon();
         
     }
     
