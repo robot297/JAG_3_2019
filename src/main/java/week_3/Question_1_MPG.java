@@ -1,7 +1,6 @@
 package week_3;
 
 /**
- *
 
  Write a program to calculate the MPG for a car journey.
  (MPG = Miles per gallon, calculate by dividing number of miles, by number of gallons of gas used).
@@ -20,30 +19,38 @@ package week_3;
 
 public class Question_1_MPG {
 
+    // You don't need to modify this method.
     public static void main(String[] args) {
-        new Question_1_MPG().calculate();
+        new Question_1_MPG().mpgCalculations();
     }
 
-    public void calculate() {
+
+    public void mpgCalculations() {
 
         // TODO Ask user for number of miles, as a double
 
         // TODO Ask user for gallons of gas used, as a double
 
-        // TODO After this method, create a method called mpg. This method will calculate and return the MPG
+        // TODO Call your new mpg method (that you'll write below) and save the returned miles-per-gallon value
 
-        // TODO Here, call the mpg method and save the returned MPG value
-
-        // TODO Print the return value.
+        // TODO Print the return miles-per-gallon value.
 
     }
 
-    
-    // TODO create a public method called "mpg".
+
+    // TODO After this method, create a method called mpg. This method will calculate and return the miles-per-gallon for a trip,
+    // based on the miles driven and the gallons of gas used.
+    // Your method should be public.
     // A public method declaration begins with the word public, for example in the calculate() method above.
     // The method needs to be public so the test can find it.
-    // Make sure you use the name mpg since the test expects to find a method with that name.
-    // The method takes two arguments, miles driven and gas used, in that order.
-    // It will calculate and return the MPG for this journey.
+
+    // Make sure you use the name mpg since the test expects to find a method with that exact name.
+
+    // The mpg method takes two parameters, miles driven and gas used, both doubles, *in that order*.
+
+    // The mpg method should calculate and return the MPG for this journey.
+
+    // The mpg method should use the two parameters (miles driven, and gas used) to calculate the miles-per-gallon.
+    // The mpg method should not ask for any user input - get the user input in the calculate
 
 }
