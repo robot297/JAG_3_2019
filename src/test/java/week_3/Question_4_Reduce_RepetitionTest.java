@@ -1,28 +1,18 @@
 package week_3;
 
 import com.google.common.base.Joiner;
-import input.InputUtils;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.TextFromStandardInputStream;
-import org.junit.runner.RunWith;
-import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.modules.junit4.PowerMockRunner;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.lang.reflect.Method;
 
-import static org.easymock.EasyMock.anyString;
-import static org.easymock.EasyMock.expect;
 import static org.junit.Assert.*;
 import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.emptyStandardInputStream;
-//import static org.powermock.api.easymock.PowerMock.mockStatic;
-//import static org.powermock.api.easymock.PowerMock.replay;
 
-
-//@RunWith(PowerMockRunner.class)
-//@PrepareForTest(InputUtils.class)
 public class Question_4_Reduce_RepetitionTest {
 
     // This one is tricky to test since student must decide how to restructure the program.

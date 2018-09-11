@@ -74,42 +74,12 @@
             <version>22.0</version>
         </dependency>
 
-        <!-- EasyMock is a mocking framework. PowerMock is an extension that works with EasyMock.
-        Used for creating pretend objects that we can pre-configure their behavior and return values, useful in testing to avoid having to completely set up a program -->
-        <dependency>
-            <groupId>org.easymock</groupId>
-            <artifactId>easymock</artifactId>
-            <version>3.6</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-module-junit4</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.powermock</groupId>-->
-            <!--<artifactId>powermock-api-easymock</artifactId>-->
-            <!--<version>${powermock.version}</version>-->
-            <!--<scope>test</scope>-->
-        <!--</dependency>-->
-
-
         <dependency>
             <groupId>com.github.stefanbirkner</groupId>
             <artifactId>system-rules</artifactId>
             <version>1.18.0</version>
             <scope>test</scope>
         </dependency>
-
-        <!--For reading the JSON in week_X.json, for calculating estimated grades.-->
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.8.2</version>
-        </dependency>
-
 
     </dependencies>
     

@@ -45,7 +45,6 @@ public class ArrayListUtils {
 
     /**  Checks is membership same in two ArrayLists. Same elements, but can be in any order */
 
-
     public static boolean stringArrayListSameElementsAnyOrder(ArrayList<String> a1, ArrayList<String> a2) {
 
         if (a1 == null && a2 == null)  { return true; }    //both null
