@@ -33,7 +33,7 @@
     {
       "question" : 6,
       "java_file": "Question_6_Marathon",
-      "test_file": ["Question_6_MarathonTest"],
+      "test_file": ["week_3.Question_6_MarathonTest"],
       "points": 4.5
     }
   ]
