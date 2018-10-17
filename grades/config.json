@@ -2,9 +2,7 @@
   "student_code_locations": [
     "src/main"
   ],
-  "report_locations": [
-    "target/surefire-reports"
-  ],
+  "report_location": "target/surefire-reports",
   "docker": {
     "mem_limit": "512M",
     "mounts":
