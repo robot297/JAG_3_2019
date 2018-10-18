@@ -31,7 +31,7 @@
             <plugin>
                 <groupId>edu.minneapolis</groupId>
                 <artifactId>ygi-maven-plugin</artifactId>
-                <version>0.0.2-alpha-1</version>
+                <version>0.0.2-alpha-4</version>
                 <executions>
                     <execution>
                         <phase>test</phase>
