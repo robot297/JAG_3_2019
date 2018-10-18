@@ -9,4 +9,4 @@ WORKDIR /usr/src/mymaven
 # Execute any setup commands here
 
 # Execute tests
-CMD ["mvn", "test"]
+CMD ["mvn", "test", "-U"]
