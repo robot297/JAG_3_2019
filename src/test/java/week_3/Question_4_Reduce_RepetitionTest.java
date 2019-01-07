@@ -1,7 +1,5 @@
 package week_3;
 
-import com.google.common.base.Joiner;
-
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.TextFromStandardInputStream;
@@ -28,8 +26,8 @@ public class Question_4_Reduce_RepetitionTest {
 
         // Yes, you can probably trick this test as well.
 
-        Joiner joiner = Joiner.on(System.getProperty("file.separator"));
-        String path = joiner.join("src", "main", "java", "week_3", "Question_4_Reduce_Repetition.java");   // yuck for the absolute file path. Also yuck for not checking if there is a library method to join parts of the path.
+        String separator = System.getProperty("file.separator");
+        String path = String.join(separator, "src", "main", "java", "week_3", "Question_4_Reduce_Repetition.java");   // yuck for the absolute file path. Also yuck for not checking if there is a library method to join parts of the path.
         BufferedReader reader = new BufferedReader(new FileReader(path));
 
         int loc = 0;
