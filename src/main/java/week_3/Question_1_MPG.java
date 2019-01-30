@@ -36,8 +36,8 @@ public class Question_1_MPG {
         // TODO Print the return miles-per-gallon value.
 
     }
-
-
+    
+    
     // TODO After this method, create a method called mpg. This method will calculate and return the miles-per-gallon for a trip,
     // based on the miles driven and the gallons of gas used.
     // Your method should be public.

@@ -1,9 +1,6 @@
 package week_3;
 
 /**
- *
- *
- *
 
  Write a program that can help decide if a particular programming project
  is best solved using a Waterfall or Agile methodology.

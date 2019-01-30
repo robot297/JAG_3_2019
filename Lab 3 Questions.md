@@ -19,6 +19,7 @@
 Make sure you use the name `mpg` for your method, since the test expects to find a method with that name.
 The method takes two arguments, miles driven and gas used, in that order.
 
+
 ### Question 2 Do You Need A Hat?
 
 You have a client who likes to wear a hat when the temperature is at or below 40F.
@@ -78,7 +79,7 @@ This method can ask the user for data about that drink, calculate sales for that
 Hint: You are going to call your new method 5 times. But don't write 5 lines of code to call the method! 5 times is manageable, but what if there were 100 drinks? 
 Can you use an array of drink names, and a loop? Your drinks are 
  
-String[] drinks = { "coffee", "hot chocolate", "tea", "cappuccino", "mocha"};
+`String[] drinks = { "coffee", "hot chocolate", "tea", "cappuccino", "mocha"};`
 
 The total lines of code in your program should get smaller. BUT, don't just delete lines,
 or compress more than one line together. Your code will be reviewed for clarity, readability, and logic.
@@ -96,6 +97,7 @@ and return that number.  So for the example array above, your method will return
 
 You will need to use some Java library methods. You may need some methods from
 some or all of these library classes: String, Character, Integer.
+  
   
 ### Question 6 Marathon
       
