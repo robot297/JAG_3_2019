@@ -67,13 +67,20 @@ public class Question_6_MarathonTest {
         String printedOutput = resetStandardOut();  // Restore regular printing behavior
         
         // Check the output from the first call to the training method (start 3 miles, target 5, increase 20%. 4 weeks total.
+
+
         printedOutput = printedOutput.replace("\n", " ");
         printedOutput = printedOutput.replace("\r", " ");
-        
+        printedOutput = printedOutput.replace("|", " ");
+
+
         // Week 1 3.00, Week 2 3.60, Week 3 4.32, Week 4 5.18, to 2 decimal places.
-        String expectedPatternRegex = ".*1.*3.0.*2.*3.60.*3.*4.32.*4.*5.18.*";
+        String expectedPatternRegex = ".*1.*3.00.*2.*3.60.*3.*4.32.*4.*5.18.*";
         
-        assertTrue("Check that your table is printing every row of the training schedule. If you think your code is correct, please alert Clara", Pattern.matches(expectedPatternRegex, printedOutput));
+        assertTrue("Check that your table is printing every row of the training schedule. \n" +
+                "Make sure you print a row for every week.\n" +
+                "Make sure your format your distances to exactly 2 decimal places, for example, 1.00 or 1.56\n" +
+                "If you think your code is correct, please alert Clara", Pattern.matches(expectedPatternRegex, printedOutput));
         
         // Check that there are no numbers with more than 2 decimal places
         
