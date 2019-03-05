@@ -2,37 +2,37 @@
   "questions" : [
     {
       "question" : 1,
-      "source_file": "Question_1_MPG",
+      "java_file": "Question_1_MPG",
       "test_files": ["week_3.Question_1_MPGTest"],
       "points": 2.5
     },
     {
       "question" : 2,
-      "source_file": "Question_2_Wear_A_Hat",
+      "java_file": "Question_2_Wear_A_Hat",
       "test_files": ["week_3.Question_2_Wear_A_HatTest"],
       "points": 2.5
     },
     {
       "question" : 3,
-      "source_file": "Question_3_Agile_Or_Waterfall",
+      "java_file": "Question_3_Agile_Or_Waterfall",
       "test_files": ["week_3.Question_3_Agile_Or_WaterfallTest"],
       "points": 3.5
     },
     {
       "question" : 4,
-      "source_file": "Question_4_Reduce_Repetition",
+      "java_file": "Question_4_Reduce_Repetition",
       "test_files": ["week_3.Question_4_Reduce_RepetitionTest"],
       "points": 3.5
     },
     {
       "question" : 5,
-      "source_file": "Question_5_Count_Uppercase_Letters",
+      "java_file": "Question_5_Count_Uppercase_Letters",
       "test_files": ["week_3.Question_5_CountUppercaseLettersTest"],
       "points": 3.5
     },
     {
       "question" : 6,
-      "source_file": "Question_6_Marathon",
+      "java_file": "Question_6_Marathon",
       "test_files": ["week_3.Question_6_MarathonTest"],
       "points": 4.5
     }
