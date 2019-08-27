@@ -5,7 +5,7 @@ package week_3;
  Write a program that can convert arrays to uppercase or lowercase.
  You will create a method that can convert an array of Strings to uppercase or lowercase.
  
- COMMENT YOUR CODE. As well as the tests, the instructor will also read your comments
+ As with all lab questions, you should COMMENT YOUR CODE. As well as the tests, the instructor will also read your comments
  to verify that you understand and can describe the code you've written.
  
  */
@@ -24,16 +24,16 @@ public class Question_5_Change_Array_Case {
 
         // You don't need any user input in this program.
         
-        // TODO call your new convertArrayCase with these example arrays and print the resulting array to check it works.
+        // TODO call your new convertArrayCase with these example arrays and print the modified array to check it works.
     }
     
-    // TODO write a public static method called convertArrayCase that takes two argument, a String[] array and a boolean toUpperCase
-    // If the boolean is true, convert the array to uppercase.
-    // If the boolean is false, convert the array to lowercase.
-    
-    // Convert the array in place.
-    
-    // Your method's return type should be void. Modify the array in the method.
-    // Why don't you need to return anything?
+//     TODO write a public static method called convertArrayCase that takes two argument, a String[] array and a boolean toUpperCase
+//     If the boolean is true, convert the array to uppercase.
+//     If the boolean is false, convert the array to lowercase.
+//
+//     Modify the array in your method.
+//
+//     Your method's return type should be void. Modify the array in the method.
+//     Why don't you need to return anything?
     
 }

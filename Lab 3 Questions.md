@@ -1,6 +1,6 @@
 # Lab 3
 
-**For every question: write comments in your code! Lab work with missing/inadequate comments will have points deducted.**
+**For every question: write comments in your code! Lab work with missing or inadequate comments will have points deducted.**
 
 
 ### Question 1 MPG
@@ -36,6 +36,21 @@ As before, make sure you use the name `doYouNeedAHat` for your method, and make 
 
 ### Question 3 Bus Fares 
 
+Write a program that calculates the total amount spent on bus fares.
+
+Create a new public static method called `fareTotal`
+The fareTotal method takes two arguments in this order:
+ - regularRides, an int, for the number of regular bus rides the user made
+ - rushRides, an int, for the number of rush hour bus rides the user made
+    
+ The `fareTotal` method should calculate the total amount spent of bus rides.
+ - A regular bus fare is $2
+ - A rush hour bus fare is $2.50.
+ 
+The `fareTotal` method will return the total amount spent on bus rides
+The return value from the `fareTotal` method will be a double.
+    
+Call the `fareTotal` method from main, and print out the total amount spent on bus fares.
 
 
 ### Question 4 Agile or Waterfall
@@ -71,12 +86,28 @@ Your main method should do all of the asking questions and printing the result.
 Your agileOrWaterfall method should be given the relevant data, and do the processing,
 deciding, and returning the result.
 
-
-
  
 ### Question 5 Change Array Case 
 
+Write a program that can convert arrays to all uppercase or lowercase.
+You will create a method that can convert an array of Strings to uppercase or lowercase.
+ 
+As with all lab questions, you should COMMENT YOUR CODE. As well as the tests, the instructor will also read your comments
+to verify that you understand and can describe the code you've written.
+ 
+In this program, write a public static method called convertArrayCase that takes two argument, 
+a String[] array and a boolean toUpperCase
 
+When the method is called,
+- If the boolean is true, convert the array to uppercase.
+- If the boolean is false, convert the array to lowercase.
+     
+Modify the original array in the method.
+     
+Your method's return type should be void. Modify the array in the method.
+Why don't you need to return anything?
+
+Call your new method from main with the example arrays, and print out the modified array to ensure your program is working. 
   
 ### Question 6 Marathon
       
