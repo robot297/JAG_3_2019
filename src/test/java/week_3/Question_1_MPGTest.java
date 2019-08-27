@@ -52,8 +52,11 @@ public class Question_1_MPGTest {
                     "\nDo not use any number formatting or rounding in your method. Return the exact calculated value.", resultDouble, 73.170731, delta);
 
 
-        } catch (Exception e) {
-            // Catch for method.invoke. Will fail if the wrong number of method arguments are given, or are not the correct types
+        }
+        catch (NullPointerException e) {
+            fail("Make sure the mpg method is static. The method header should start public static... ");
+        }
+        catch (Exception e) {
             fail("Check that the mpg method takes two double arguments, the miles driven, and gas used, in that order.");
         }
 

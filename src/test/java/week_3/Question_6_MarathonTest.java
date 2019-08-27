@@ -12,24 +12,24 @@ import static test_utils.PrintUtils.*;
 
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.contrib.java.lang.system.SystemOutRule;
 
 
 public class Question_6_MarathonTest {
     
-    private Method training;
-    
     @Test(timeout = 3000)
     public void findTrainingMethod(){
         // Find trainingSchedule method that student has created
-        training = findMethod("week_3.Question_6_Marathon", "trainingSchedule", new Class[]{double.class, double.class, double.class});
+        Method training = findMethod("week_3.Question_6_Marathon", "trainingSchedule", new Class[]{double.class, double.class, double.class});
         
     }
     
     @Test(timeout=3000)
     public void testTrainingScheduleWeeks() {
     
-        training = findMethod("week_3.Question_6_Marathon", "trainingSchedule", new Class[]{double.class, double.class, double.class});
+        Method training = findMethod("week_3.Question_6_Marathon", "trainingSchedule", new Class[]{double.class, double.class, double.class});
     
         try {
             
@@ -48,31 +48,41 @@ public class Question_6_MarathonTest {
             assertEquals("Start 10 miles, target 100, increase 8% should be 31 weeks", 31, weeks);
             
         } catch (Exception e) {
-            fail("Check your trainingSchedule method has the right name, right parameters, right return type, " +
-                    "\nand does not throw any exceptions when it runs. Check the instructions for the types required. " +
+            fail("Check your trainingSchedule method has the right name, and is static. \n" +
+                    "Check you are using the right parameter types and the , right return type, " +
+                    "\nand the method does not throw any exceptions when it runs. Check the instructions for the types required. " +
                     "\nError message:" + e.toString());
         }
         
     }
     
     
+    @Rule
+    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
+    
+    
+    
     @Test(timeout=3000)
     public void testTrainingScheduleTable() throws Exception {
         
-        catchStandardOut();   // Save everything the program prints to the terminal.
+       // catchStandardOut();   // Save everything the program prints to the terminal.
         
+        Method training = findMethod("week_3.Question_6_Marathon", "trainingSchedule", new Class[]{double.class, double.class, double.class});
+    
         training.invoke(null, 3, 5, 20);   // don't care what is returned, tested it in method above.
         
-        String printedOutput = resetStandardOut();  // Restore regular printing behavior
+        //String printedOutput = resetStandardOut();  // Restore regular printing behavior
         
         // Check the output from the first call to the training method (start 3 miles, target 5, increase 20%. 4 weeks total.
         
+        String printedOutput = systemOutRule.getLog().trim();
+    
         printedOutput = printedOutput.replace("\n", " ");
         printedOutput = printedOutput.replace("\r", " ");
         printedOutput = printedOutput.replace("|", " ");
         
         // Week 1 3.00, Week 2 3.60, Week 3 4.32, Week 4 5.18, to 2 decimal places.
-        String expectedPatternRegex = ".*1.*3.00.*2.*3.60.*3.*4.32.*4.*5.18.*";
+        String expectedPatternRegex = ".*1.*3\\.00.*2.*3\\.60.*3.*4\\.32.*4.*5\\.18.*";
         
         assertTrue("Check that your table is printing every row of the training schedule. \n" +
                 "Make sure you print a row for every week.\n" +

@@ -27,6 +27,8 @@ public class Question_5_Change_Array_Case {
         // TODO call your new convertArrayCase with these example arrays and print the modified array to check it works.
     }
     
+    
+    
 //     TODO write a public static method called convertArrayCase that takes two argument, a String[] array and a boolean toUpperCase
 //     If the boolean is true, convert the array to uppercase.
 //     If the boolean is false, convert the array to lowercase.

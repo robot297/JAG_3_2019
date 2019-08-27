@@ -18,14 +18,14 @@ public class Question_3_Bus_FaresTest {
     
     @Test(timeout = 3000)
     public void createdBusFareMethod() {
-        findMethod("week3.Question_3_Bus_Fares", "fareTotal", new Class[]{int.class, int.class});
+        findMethod("week_3.Question_3_Bus_Fares", "fareTotal", new Class[]{int.class, int.class});
     }
     
     
     @Test(timeout = 3000)
     public void testBusFareCalculations() {
     
-        Method busFares = findMethod("week3.Question_3_Bus_Fares", "fareTotal", new Class[]{int.class, int.class});
+        Method busFares = findMethod("week_3.Question_3_Bus_Fares", "fareTotal", new Class[]{int.class, int.class});
         
         try {
         
@@ -38,7 +38,11 @@ public class Question_3_Bus_FaresTest {
                     "Check that your math is correct.\n",
                     25.50, fareTotal, 0);
             
-        } catch (ClassCastException e) {
+        }
+        catch (NullPointerException e) {
+            fail("Make sure the fareTotal method is static. The method header should start public static... ");
+        }
+        catch (ClassCastException e) {
             fail("Make sure you return a double (not a Double) from the fareTotal method ");
         } catch (InvocationTargetException | IllegalAccessException e) {
             fail("Error calling your method with the arguments 4 and 7. Check your method definition");

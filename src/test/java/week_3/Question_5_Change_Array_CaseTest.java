@@ -12,9 +12,9 @@ import static test_utils.MethodUtil.findMethod;
 public class Question_5_Change_Array_CaseTest {
 
     @Test(timeout = 3000)
-    public void convertArrayCaseethodDeclared() {
-        Method convertMethod = findMethod("week_3.Question_5_ChangeArrayCase", "convertArrayCase", new Class[]{String[].class, boolean.class});
-        assertEquals("Your convertArrayCase method should return void.", Void.class, convertMethod.getReturnType());
+    public void convertArrayCaseMethodDeclared() {
+        Method convertMethod = findMethod("week_3.Question_5_Change_Array_Case", "convertArrayCase", new Class[]{String[].class, boolean.class});
+        assertEquals("Your convertArrayCase method should return void.", Void.TYPE, convertMethod.getReturnType());
         
     }
 
@@ -24,7 +24,7 @@ public class Question_5_Change_Array_CaseTest {
         invokeConvertArrayCase(new String[]{ "a", "B", "c"}, true, new String[]{ "A", "B", "C"});
         invokeConvertArrayCase(new String[]{ "A", "B", "C", "5"}, true, new String[]{ "A", "B", "C", "5"});
         invokeConvertArrayCase(new String[]{ "Pizza", "PIZZA", "taCos", "ChEEse"}, true, new String[]{ "PIZZA", "PIZZA", "TACOS", "CHEESE"});
-        invokeConvertArrayCase(new String[]{ "5", "E", "%", "G", "\t", "g"}, true, new String[]{ "5", "e", "%", "g", "\t", "g"});
+        invokeConvertArrayCase(new String[]{ "5", "E", "%", "G", "\t", "g"}, true, new String[]{ "5", "E", "%", "G", "\t", "G"});
     }
 
 
@@ -40,7 +40,7 @@ public class Question_5_Change_Array_CaseTest {
     
     private void invokeConvertArrayCase(String[] input, boolean toUpper, String[] expectedOut) {
 
-        Method method = findMethod("week_3.Question_5_ChangeArrayCase", "convertArrayCase", new Class[]{String[].class, boolean.class});
+        Method method = findMethod("week_3.Question_5_Change_Array_Case", "convertArrayCase", new Class[]{String[].class, boolean.class});
 
         try {
 

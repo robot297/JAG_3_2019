@@ -4,12 +4,11 @@ import static input.InputUtils.*;
 
 /**
  *
- * The fare to ride the bus during rush hours is $2.50.
  * The fare to ride the bus during regular (not rush) hours is $2.00.
+ * The fare to ride the bus during rush hours is $2.50.
  *
- * For this program, write a method called
-
- 
+ * Create a program to calculate the total spent on bus rides,
+ * from the number of regular and number of rush hour trips taken.
  */
 
 
@@ -26,7 +25,6 @@ public class Question_3_Bus_Fares {
         // TODO print the total amount spent on all bus rides.
     
     }
-
     
     // TODO create a new public static method called fareTotal
     // The fareTotal method takes two arguments in this order:

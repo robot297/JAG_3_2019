@@ -39,11 +39,10 @@ package week_3;
 public class Question_4_Agile_Or_Waterfall {
 
     // You will use these constants in your program to represent the decision on methodology
-    public final String AGILE = "Agile";
-    public final String WATERFALL = "Waterfall";
-    public final String EITHER = "Either";
+    public static final String AGILE = "Agile";
+    public static final String WATERFALL = "Waterfall";
+    public static final String EITHER = "Either";
 
-    // don't modify this part
     public static void main(String[] args) {
         
         // TODO Ask user the 6 questions
@@ -51,8 +50,8 @@ public class Question_4_Agile_Or_Waterfall {
         // TODO Use the suggestion agileOrWaterfall returns to print a message for the user.
 
     }
-
-
+    
+    
     // TODO write a public static agileOrWaterfall method. It should have this name, and take
     // the 6 arguments needed, in the same order given in the description.
     

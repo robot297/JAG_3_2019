@@ -51,7 +51,11 @@ public class Question_2_Wear_A_HatTest {
                             + ".\n",
                     expectedOut, wearHat);
 
-        } catch (InvocationTargetException ie) {
+        }
+        catch (NullPointerException e) {
+            fail("Make sure the doYouNeedAHat method is static. The method header should start public static... ");
+        }
+        catch (InvocationTargetException ie) {
             String message = "When called with the double '" + tempIn + "' your method threw a " + ie.getTargetException().getClass().toString() + ", " + ie.getTargetException().getMessage();
             fail(message);
         } catch (ClassCastException e) {

@@ -36,7 +36,7 @@ import static input.InputUtils.doubleInput;
  In your method, use a loop to calculate the distance they need to run every
  week until they can run the target distance.
 
- The method should print the weekly distance data as a table.
+ The method should also print the weekly distance data as a table. You can do this in the loop.
  Use string formatting to display the weekly distances to 2 decimal places.
 
  The method should return the number of weeks it will take, as an integer.
@@ -47,18 +47,17 @@ public class Question_6_Marathon {
 
     public static void main(String[] args) {
         
-        double currentDistance = doubleInput("How far can you run right now, in miles? ");
-        double targetDistance = doubleInput("What is the target distance, in miles? ");
+        double currentDistance = doubleInput("How far can you run right now, in miles?");
+        double targetDistance = doubleInput("What is the target distance, in miles?");
         double weeklyPercentIncrease = doubleInput("What percent further do you want to run every week? Example: enter 5 for 5% or 10 for 10% ");
 
         // TODO Call your trainingSchedule method.
         // The method will print a table of weeks and distances; and return total number of weeks
         // TODO Print the total number of weeks.
-
-
+        
     }
 
-
+   
     // TODO write a public static method called trainingSchedule
     // It will take 3 double arguments: currentDistance, targetDistance, and percentIncrease
     // Ensure that you use three double arguments, in this order.
