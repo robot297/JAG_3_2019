@@ -9,22 +9,27 @@ import static org.junit.Assert.*;
 import static test_utils.MethodUtil.findMethod;
 
 public class Question_2_Wear_A_HatTest {
-
-    @Test
+    
+    @Test(timeout = 3000)
+    public void createdDoYouNeedAHatMethod() {
+        Method findHat = findMethod("week_3.Question_2_Wear_A_Hat", "doYouNeedAHat", new Class[]{double.class});
+    }
+        
+        
+        @Test(timeout = 3000)
     public void doYouNeedAHatTodayAbove40() {
         findAndInvokeHatMethod(40.0000001, false);
         findAndInvokeHatMethod(70.0, false);
     }
-
-
-
-    @Test
+    
+    
+    @Test(timeout = 3000)
     public void doYouNeedAHatTodayAt40() {
         findAndInvokeHatMethod(40.0, true);
     }
-
-
-    @Test
+    
+    
+    @Test(timeout = 3000)
     public void doYouNeedAHatTodayBelow40() {
         findAndInvokeHatMethod(39.9999, true);
         findAndInvokeHatMethod(20, true);
@@ -34,13 +39,11 @@ public class Question_2_Wear_A_HatTest {
 
     private void findAndInvokeHatMethod(double tempIn, boolean expectedOut) {
 
-        Method method = findMethod("week_3.Question_2_Wear_A_Hat", "doYouNeedAHat", new Class[]{double.class});
-
-        Question_2_Wear_A_Hat q2 = new Question_2_Wear_A_Hat();
-
+        Method findHat = findMethod("week_3.Question_2_Wear_A_Hat", "doYouNeedAHat", new Class[]{double.class});
+        
         try {
 
-            boolean wearHat = (boolean) method.invoke(q2, tempIn);
+            boolean wearHat = (boolean) findHat.invoke(null, tempIn);
             assertEquals("Your doYouNeedAHat method, called with the temperature '"
                             + tempIn
                             + "' is expected to return "

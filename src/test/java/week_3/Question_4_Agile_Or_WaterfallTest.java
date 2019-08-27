@@ -9,7 +9,7 @@ import static test_utils.MethodUtil.findMethod;
 
 import java.lang.reflect.Method;
 
-public class Question_3_Agile_Or_WaterfallTest  {
+public class Question_4_Agile_Or_WaterfallTest {
     
     private Method agileOrWaterfall;
     
@@ -25,7 +25,7 @@ public class Question_3_Agile_Or_WaterfallTest  {
         
         try {
             
-            Question_3_Agile_Or_Waterfall q3 = new Question_3_Agile_Or_Waterfall();
+            Question_4_Agile_Or_Waterfall q3 = new Question_4_Agile_Or_Waterfall();
             
             // Combos that should return Agile
             String decision = (String) agileOrWaterfall.invoke(q3, 10, false, true, false, true, true);  // All for agile
@@ -50,7 +50,7 @@ public class Question_3_Agile_Or_WaterfallTest  {
         
         try {
             
-            Question_3_Agile_Or_Waterfall q3 = new Question_3_Agile_Or_Waterfall();
+            Question_4_Agile_Or_Waterfall q3 = new Question_4_Agile_Or_Waterfall();
             
             // Example combos that should return Waterfall
             String decision = (String) agileOrWaterfall.invoke(q3, 50, true, false, true, false, false);  // All for waterfall
@@ -72,7 +72,7 @@ public class Question_3_Agile_Or_WaterfallTest  {
 
         try {
             
-            Question_3_Agile_Or_Waterfall q3 = new Question_3_Agile_Or_Waterfall();
+            Question_4_Agile_Or_Waterfall q3 = new Question_4_Agile_Or_Waterfall();
             
             // Combos that should return Either
             String decision = (String) agileOrWaterfall.invoke(q3, 10, true, false, true, true, true);   // 3 for each

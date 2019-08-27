@@ -21,26 +21,18 @@ public class Question_1_MPG {
 
     // You don't need to modify this method.
     public static void main(String[] args) {
-        new Question_1_MPG().mpgCalculations();
-    }
-
-
-    public void mpgCalculations() {
-
+        
         // TODO Ask user for number of miles, as a double
-
         // TODO Ask user for gallons of gas used, as a double
-
         // TODO Call your new mpg method (that you'll write below) and save the returned miles-per-gallon value
-
         // TODO Print the return miles-per-gallon value.
 
     }
     
-    
-    // TODO After this method, create a method called mpg. This method will calculate and return the miles-per-gallon for a trip,
+    // TODO After the main method, create a public static method called mpg.
+    // This method will calculate and return the miles-per-gallon for a trip,
     // based on the miles driven and the gallons of gas used.
-    // Your method should be public.
+    // Your method should be public and static.
     // A public method declaration begins with the word public, for example in the calculate() method above.
     // The method needs to be public so the test can find it.
 

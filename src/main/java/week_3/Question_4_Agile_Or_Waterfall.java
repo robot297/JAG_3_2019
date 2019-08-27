@@ -36,30 +36,27 @@ package week_3;
  deciding, and returning the result.
 
  */
-public class Question_3_Agile_Or_Waterfall {
+public class Question_4_Agile_Or_Waterfall {
 
+    // You will use these constants in your program to represent the decision on methodology
     public final String AGILE = "Agile";
     public final String WATERFALL = "Waterfall";
     public final String EITHER = "Either";
 
     // don't modify this part
     public static void main(String[] args) {
-        new Question_3_Agile_Or_Waterfall().methodology();
-    }
-
-
-    public void methodology() {
-
+        
         // TODO Ask user the 6 questions
-        // TODO Call the agileOrWaterfall method
+        // TODO Call your agileOrWaterfall method
         // TODO Use the suggestion agileOrWaterfall returns to print a message for the user.
 
     }
 
 
-    // TODO write a public agileOrWaterfall method. It should have this name, and take
+    // TODO write a public static agileOrWaterfall method. It should have this name, and take
     // the 6 arguments needed, in the same order given in the description.
-    // TODO this function should a String - one of the three Strings AGILE, WATERFALL or EITHER.
+    
+    // TODO this function should return a String - one of the three Strings AGILE, WATERFALL or EITHER.
     // For example, if your method determines that Agile is best, write a statement like
     //      return AGILE;  // return the value in the AGILE constant
 

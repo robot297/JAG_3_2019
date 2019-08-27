@@ -1,5 +1,8 @@
 # Lab 3
 
+**For every question: write comments in your code! Lab work with missing/inadequate comments will have points deducted.**
+
+
 ### Question 1 MPG
 
  Write a program to calculate the MPG for a car journey.
@@ -31,7 +34,11 @@ This method will return false if the temperature is above 40F.
 As before, make sure you use the name `doYouNeedAHat` for your method, and make sure you use the correct argument and return type.
 
 
-### Question 3 Agile or Waterfall
+### Question 3 Bus Fares 
+
+
+
+### Question 4 Agile or Waterfall
 
 Write a program that can help decide if a particular programming project
 is best solved using a Waterfall or Agile methodology.
@@ -65,39 +72,11 @@ Your agileOrWaterfall method should be given the relevant data, and do the proce
 deciding, and returning the result.
 
 
-### Question 4 Reduce Repetition
 
-Start with the `Question_4_Reduce_Repetition.java` program.
  
-Notice there are several drinks, and the code to get the total sales for each is very similar.
-Can you create a new method that will be called from the coffeeShop method,
-to make this program less repetitive?
- 
-Hint: create a method that takes the name of a drink as an argument. 
-This method can ask the user for data about that drink, calculate sales for that drink, and return the sales for that drink.
+### Question 5 Change Array Case 
 
-Hint: You are going to call your new method 5 times. But don't write 5 lines of code to call the method! 5 times is manageable, but what if there were 100 drinks? 
-Can you use an array of drink names, and a loop? Your drinks are 
- 
-`String[] drinks = { "coffee", "hot chocolate", "tea", "cappuccino", "mocha"};`
 
-The total lines of code in your program should get smaller. BUT, don't just delete lines,
-or compress more than one line together. Your code will be reviewed for clarity, readability, and logic.
- 
- 
-### Question 5 Count Uppercase Letters
-
-Write a method called countUppercase that takes a String array argument.
-You can assume that every element in the array is a one-letter String, for example
-
-`String[] test = { "a", "B", "c", "D", "e"};`
-
-This method will count the number of uppercase letters from the set A through Z in the array, 
-and return that number.  So for the example array above, your method will return 2. 
-
-You will need to use some Java library methods. You may need some methods from
-some or all of these library classes: String, Character, Integer.
-  
   
 ### Question 6 Marathon
       

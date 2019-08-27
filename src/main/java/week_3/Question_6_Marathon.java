@@ -46,11 +46,7 @@ import static input.InputUtils.doubleInput;
 public class Question_6_Marathon {
 
     public static void main(String[] args) {
-        new Question_6_Marathon().training();
-    }
-
-    public void training() {
-
+        
         double currentDistance = doubleInput("How far can you run right now, in miles? ");
         double targetDistance = doubleInput("What is the target distance, in miles? ");
         double weeklyPercentIncrease = doubleInput("What percent further do you want to run every week? Example: enter 5 for 5% or 10 for 10% ");
@@ -63,7 +59,7 @@ public class Question_6_Marathon {
     }
 
 
-    // TODO write a public method called trainingSchedule
+    // TODO write a public static method called trainingSchedule
     // It will take 3 double arguments: currentDistance, targetDistance, and percentIncrease
     // Ensure that you use three double arguments, in this order.
     //

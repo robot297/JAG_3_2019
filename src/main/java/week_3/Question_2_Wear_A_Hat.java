@@ -15,11 +15,8 @@ import static input.InputUtils.doubleInput;
 public class Question_2_Wear_A_Hat {
 
     // You don't need to modify this.
-    public static void main(String[] args) { new Question_2_Wear_A_Hat().doYouNeedAHatToday(); }
-
-
-    public void doYouNeedAHatToday() {
-
+    public static void main(String[] args) {
+        
         double todayTemperature = doubleInput("Enter today's temperature, in fahrenheit.");
 
         // TODO Call your new doYouNeedAHat method with todayTemperature as the argument.
@@ -28,7 +25,7 @@ public class Question_2_Wear_A_Hat {
     }
 
 
-    // TODO create the new public doYouNeedAHat method here.
+    // TODO create the new public static doYouNeedAHat method here.
     // doYouNeedAHat should have one argument, a double, representing the temperature.
     // doYouNeedAHat should return a boolean.
     // If the temperature is at or below 40F, return true.
