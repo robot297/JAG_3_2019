@@ -26,7 +26,7 @@ import static input.InputUtils.doubleInput;
  Then, you think, what if your friend decides they want to train for a
  10 mile race? Or a 100 mile race?
 
- What if you friend starts with the ability to run 5 miles?
+ What if your friend starts with the ability to run 5 miles?
 
  Write a method that takes 3 arguments:
    - the current distance your friend can run,
